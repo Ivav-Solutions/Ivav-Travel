@@ -15,12 +15,17 @@ class HomePageController extends Controller
         return view('about');
     }
     
-    public function web_application_development() {
-        return view('web_application_development');
+    public function under_graduate() {
+        return view('under_graduate');
     }
 
-    public function travel_consultancy() {
-        return view('travel_consultancy');
+    public function post_graduate() {
+        return view('post_graduate');
+    }
+
+    public function uk_global_talent_program()
+    {
+        return view('uk_global_talent_program');
     }
     
     public function faq() {
@@ -54,10 +59,5 @@ class HomePageController extends Controller
 
         return back()->with('success_report', 'Form Submitted Successfully, We will get in touch with you shortly!');
         // return response()->json(['success'=>'Form is successfully submitted!']);
-    }
-    
-    public function book_appointment()
-    {
-        return view('book_appointment');
     }
 }

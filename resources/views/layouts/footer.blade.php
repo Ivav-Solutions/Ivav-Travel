@@ -15,20 +15,21 @@
                 <div class="single-footer-widget pl-4">
                     <h3>Quick Links</h3>
                     <ul class="links-list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About Us</a></li>
                         <li><a href="/contact">Contact Us</a></li>
-                        <li><a href="#">Blog Details</a></li>
-                        <li><a href="/contact">Get A Quote</a></li>
+                        <li><a href="#">Our Blog</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-footer-widget pl-2">
-                    <h3>Help Us</h3>
+                    <h3>Services</h3>
                     <ul class="links-list">
-                        <li><a href="/about-us">About Us</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="/service/uk_study_program/under_graduate">Under Graduate</a></li>
+                        <li><a href="/service/uk_study_program/post_graduate">Post Graduate</a></li>
+                        <li><a href="/service/uk_global_talent_program">UK Global Talent Program</a></li>
                     </ul>
                 </div>
             </div>

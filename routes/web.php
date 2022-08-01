@@ -15,8 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\HomePageController::class, 'index']);
 Route::get('/about-us', [App\Http\Controllers\HomePageController::class, 'about_us']);
-Route::get('/service/web_application_development', [App\Http\Controllers\HomePageController::class, 'web_application_development']);
-Route::get('/service/travel_consultancy', [App\Http\Controllers\HomePageController::class, 'travel_consultancy']);
+Route::get('/service/uk_study_program/under_graduate', [App\Http\Controllers\HomePageController::class, 'under_graduate']);
+Route::get('/service/uk_study_program/post_graduate', [App\Http\Controllers\HomePageController::class, 'post_graduate']);
+Route::get('/service/uk_global_talent_program', [App\Http\Controllers\HomePageController::class, 'uk_global_talent_program']);
 Route::get('/faq', [App\Http\Controllers\HomePageController::class, 'faq']);
 Route::get('/contact', [App\Http\Controllers\HomePageController::class, 'contact']);
 Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm']);

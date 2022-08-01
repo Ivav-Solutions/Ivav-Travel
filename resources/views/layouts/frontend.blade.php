@@ -21,7 +21,7 @@
 
     <title>{{config('app.name')}}</title>
 
-    <link rel="icon" type="image/png" href="{URL::asset('assets/img/favicon.png')}}">
+    <link rel="icon" type="image/png" href="{{URL::asset('assets/img/favicon.png')}}">
 
 </head>
     <body>

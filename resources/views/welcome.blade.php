@@ -101,7 +101,10 @@
                             <div class="form-group">
                                 <label>Services</label>
                                 <select class="form-select">
-                                    <option selected>Graduate</option>
+                                    <option selected>-- Select Service --</option>
+                                    <option selected>Under Graduate</option>
+                                    <option selected>Post Graduate</option>
+                                    <option selected>UK Global Talent Program</option>
                                 </select>
                             </div>
                         </div>
@@ -247,30 +250,6 @@
     </div>
     <!-- End Why Choose Us Area -->
 
-    <!-- Start Call Back Request Area -->
-    <!-- <div class="call-back-request-area ptb-100 bg-black">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12">
-                    <div class="call-back-request-img">
-                        <img src="assets/img/call-back-request2.png" alt="image">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12">
-                    <div class="call-back-request-text">
-                        <span class="sub-title">CALL BACK REQUEST</span>
-                        <h2>Help You Reach Your Dreams and Goal</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy a eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At verorh eos et accusam at vero eos et accusam.</p>
-                        
-                        <a href="/contact" class="default-btn">Request A Call <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Call Back Request Area -->
-
     <!-- Start Testimonial Area -->
     <div class="testimonial-area ptb-100">
         <div class="container">
@@ -312,86 +291,4 @@
         </div>
     </div>
     <!-- End Testimonial Area -->
-
-    <!-- Start Blog Area -->
-    <!-- <div class="blog-area ptb-100 bg-fbf9f7">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-title">OUR BLOGS</span>
-                <h2>Our Blogs</h2>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-            </div>
-
-            <!-- <div class="blog-slides owl-carousel owl-theme">
-                <div class="single-blog-item">
-                    <div class="post-image">
-                        <a href="blog-details.html" class="d-block">
-                            <img src="assets/img/blog/blog1.jpg" alt="image">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <ul class="meta">
-                            <li><i class="ri-calendar-2-line"></i> Jan 22, 2021</li>
-                            <li><i class="ri-user-voice-line"></i> <a href="blog-grid.html">Lords Evans</a></li>
-                        </ul>
-                        <h3><a href="blog-details.html">The Secret of Your Business Success Find Quickly</a></h3>
-                        <p>Lorem ipsum dolor sit amet, conseteturants atal into sadipscing elitr, sed diam nonumy eirmod nsa ada tempor invidunt ut.</p>
-                        <a href="blog-details.html" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-
-                <div class="single-blog-item">
-                    <div class="post-image">
-                        <a href="blog-details.html" class="d-block">
-                            <img src="assets/img/blog/blog2.jpg" alt="image">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <ul class="meta">
-                            <li><i class="ri-calendar-2-line"></i> Jan 20, 2021</li>
-                            <li><i class="ri-user-voice-line"></i> <a href="blog-grid.html">Sarah Taylor</a></li>
-                        </ul>
-                        <h3><a href="blog-details.html">Consulting is a Good and Best Into Our Company</a></h3>
-                        <p>Lorem ipsum dolor sit amet, conseteturants atal into sadipscing elitr, sed diam nonumy eirmod nsa ada tempor invidunt ut.</p>
-                        <a href="blog-details.html" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-
-                <div class="single-blog-item">
-                    <div class="post-image">
-                        <a href="blog-details.html" class="d-block">
-                            <img src="assets/img/blog/blog3.jpg" alt="image">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <ul class="meta">
-                            <li><i class="ri-calendar-2-line"></i> Jan 18, 2021</li>
-                            <li><i class="ri-user-voice-line"></i> <a href="blog-grid.html">James Andy</a></li>
-                        </ul>
-                        <h3><a href="blog-details.html">Business Has Become a Good in the Global World</a></h3>
-                        <p>Lorem ipsum dolor sit amet, conseteturants atal into sadipscing elitr, sed diam nonumy eirmod nsa ada tempor invidunt ut.</p>
-                        <a href="blog-details.html" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-
-                <div class="single-blog-item">
-                    <div class="post-image">
-                        <a href="blog-details.html" class="d-block">
-                            <img src="assets/img/blog/blog4.jpg" alt="image">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <ul class="meta">
-                            <li><i class="ri-calendar-2-line"></i> Jan 16, 2021</li>
-                            <li><i class="ri-user-voice-line"></i> <a href="blog-grid.html">James Andy</a></li>
-                        </ul>
-                        <h3><a href="blog-details.html">Business Has Become a Good in the Global World</a></h3>
-                        <p>Lorem ipsum dolor sit amet, conseteturants atal into sadipscing elitr, sed diam nonumy eirmod nsa ada tempor invidunt ut.</p>
-                        <a href="blog-details.html" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </div> -->
-    <!-- End Blog Area -->
 @endsection
