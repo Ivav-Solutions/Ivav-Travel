@@ -72,46 +72,42 @@
                     <span class="sub-title">SEND MESSAGE</span>
                     <h2>Lets Provide Us a Message & Contact Us</h2>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolo lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy liquyam erat, sed diam voluptua.</p>
-                    <form id="contactForm">
+                    @includeIf('layouts.error_template')
+                    <form action="/contact-us" method="post">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <input type="text" name="name" class="form-control" id="name" required data-error="Please enter your name" placeholder="Full Name">
-                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <input type="email" name="email" class="form-control" id="email" required data-error="Please enter your email" placeholder="Email Address">
-                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" name="phone_number" class="form-control" id="phone_number" required data-error="Please enter your phone number" placeholder="Mobile no">
-                                    <div class="help-block with-errors"></div>
+                                <div class="form-group mb-3">
+                                    <input type="text" name="phone" class="form-control" id="phone_number" required data-error="Please enter your phone number" placeholder="Mobile no">
                                 </div>
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" name="msg_subject" class="form-control" id="msg_subject" placeholder="Subject" required data-error="Please enter your subject">
-                                    <div class="help-block with-errors"></div>
+                                <div class="form-group mb-3">
+                                    <input type="text" name="subject" class="form-control" id="msg_subject" placeholder="Subject" required data-error="Please enter your subject">
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <textarea name="message" id="message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Message..."></textarea>
-                                    <div class="help-block with-errors"></div>
+                                <div class="form-group mb-3">
+                                    <textarea name="message" id="message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Message..."></textarea>              
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <button type="submit" class="default-btn">Send Message <i class="ri-arrow-right-line"></i></button>
-                                <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
                         </div>

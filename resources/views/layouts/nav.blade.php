@@ -22,7 +22,7 @@
                                 <li class="nav-item"><a href="/faq" class="nav-link {{ (request()->is('faq')) ? 'active' : '' }}">Faq</a></li>
                                 <li class="nav-item"><a href="#" class="dropdown-toggle nav-link {{ (request()->is('service*')) ? 'active' : '' }}">Services</a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="#" class="dropdown-toggle nav-link {{ (request()->is('service/uk_study_program*')) ? 'active' : '' }}">Uk Study Program</a>
+                                        <li class="nav-item"><a href="#" class="dropdown-toggle nav-link {{ (request()->is('service/uk_study_program*')) ? 'active' : '' }}">UK Study Program</a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item"><a href="/service/uk_study_program/under_graduate" class="nav-link {{ (request()->is('service/uk_study_program/under_graduate')) ? 'active' : '' }}">Under Graduate</a></li>
         
@@ -78,7 +78,7 @@
                                 </div>
 
                                 <div class="search-icon">
-                                    <a href="" style="color: #fff; padding-right: 30px !important; background-color: #0000ff;" class="default-btn">Book Consultation</a>
+                                    <a href="/book_consultation" style="color: #fff; padding-right: 30px !important; background-color: #0000ff;" class="default-btn {{ (request()->is('book_consultation')) ? 'active' : '' }}">Book Consultation</a>
                                 </div>
                             </div>
                         </div>

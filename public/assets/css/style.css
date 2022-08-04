@@ -8194,3 +8194,69 @@ Modal CSS
   color: var(--mainColor);
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+/* =============== login-sec ============= */
+
+.login-sec {
+	float: left;
+	width: 100%;
+	padding: 30px 0;
+	position: relative;
+}
+
+.sign-control {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding-right: 35px;
+}
+.sign-control li {
+	display: inline-block;
+	margin-right: -5px;
+}
+.sign-control li a {
+	color: #000000;
+	background-color: #e5e5e5;
+	padding: 7px 10px;
+	display: inline-block;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	-ms-border-radius: 4px 0 0 4px;
+	-o-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+.sign-control li:last-child a {
+	-webkit-border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	-ms-border-radius: 0 4px 4px 0;
+	-o-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+.sign-control li.current a {
+	background-color: #0000FF;
+	color: #fff;
+}
+.sign_in_sec {
+	display: none;
+}
+.sign_in_sec.current {
+	display: block;
+}
+
+
+.application-alert-success {
+  background: green;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px
+}
+
+.application-alert-danger {
+  background:rgb(212, 0, 0);
+  padding: 10px;
+  color: #fff;
+  font-size: 12px
+}

@@ -23,6 +23,28 @@
 
     <link rel="icon" type="image/png" href="{{URL::asset('assets/img/favicon.png')}}">
 
+    <script type="text/javascript">
+        function show(str){
+            document.getElementById('display_box').style.display = 'none';
+        }
+        function show2(sign){
+            document.getElementById('display_box').style.display = 'block';
+        }
+
+        function show1(str){
+            document.getElementById('show_box').style.display = 'none';
+        }
+        function show3(sign){
+            document.getElementById('show_box').style.display = 'block';
+        }
+
+        window.setTimeout(function() {
+            $(".alert-timeout").fadeTo(500, 0).slideUp(1000, function(){
+                $(this).remove(); 
+            });
+        }, 7000);
+    </script>
+
 </head>
     <body>
 
@@ -68,6 +90,7 @@
         <script src="{{URL::asset('assets/js/contact-form-script.js')}}"></script>
         <script src="{{URL::asset('assets/js/ajaxchimp.min.js')}}"></script>
         <script src="{{URL::asset('assets/js/main.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('assets/js/script.js')}}"></script>
     </body>
 
 </html>
