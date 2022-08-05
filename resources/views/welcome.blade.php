@@ -83,28 +83,30 @@
                     <span class="sub-title">FREE QUOTE</span>
                     <h2>Searching For An Expert Consultant From Us?</h2>
                 </div>
-                <form>
+                <form action="/request_quote" method="post">
+                    @csrf
+                    @includeIf('layouts.error_template')
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label>Your Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="name" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label>Your Email</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="email" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label>Services</label>
-                                <select class="form-select">
-                                    <option selected>-- Select Service --</option>
-                                    <option selected>Under Graduate</option>
-                                    <option selected>Post Graduate</option>
-                                    <option selected>UK Global Talent Program</option>
+                                <select class="form-select" name="service" required>
+                                    <option>-- Select Service --</option>
+                                    <option value="Under Graduate">Under Graduate</option>
+                                    <option value="Post Graduate">Post Graduate</option>
+                                    <option value="UK Global Talent Program">UK Global Talent Program</option>
                                 </select>
                             </div>
                         </div>

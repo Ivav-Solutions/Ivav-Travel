@@ -23,6 +23,8 @@ Route::get('/faq', [App\Http\Controllers\HomePageController::class, 'faq']);
 Route::get('/contact', [App\Http\Controllers\HomePageController::class, 'contact']);
 Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm']);
 Route::get('/book_consultation', [App\Http\Controllers\HomePageController::class, 'book_consultation']);
+Route::post('/request_quote', [App\Http\Controllers\HomePageController::class, 'request_quote']);
+
 
 Route::post('/uk_study_program', [App\Http\Controllers\HomePageController::class, 'uk_study_program']);
 Route::post('/uk_global_talent_program', [App\Http\Controllers\HomePageController::class, 'post_uk_global_talent_program']);

@@ -15,6 +15,7 @@
         <div class="free-quote-inner">
             <div class="section-title">
                 <h2>Form Submitted Successfully</h2>
+                <p>Thank you for consulting us today, A message has been sent to your mail!</p>
             </div>
         </div>
     </div>

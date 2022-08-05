@@ -32,19 +32,19 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label>Your Name</label>
-                                <input type="text" class="form-control" name="name" required>>
+                                <input type="text" class="form-control" name="name" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label>Your Email</label>
-                                <input type="email" class="form-control" name="email" required>>
+                                <input type="email" class="form-control" name="email" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Your Phone Number</label>
-                                <input type="tel" class="form-control" name="phone_number" required>
+                                <label>Phone Number</label>
+                                <input id="phone" name="phone_number" class="form-control" type="tel" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -80,8 +80,8 @@
                             <div class="form-group">
                                 <label>Do you Have Dependent?</label>
                                 <div style="margin-top: 1rem">
-                                    <input type="radio" id="e1" name="are_you_dependent" required onchange="show2()" value="Yes"><span style="color: #fff; margin-left: 5px; margin-right: 1rem;">Yes</span> 
-                                    <input type="radio" name="are_you_dependent"  required onchange="show(this.value)" value="No"checked><span style="color: #fff; margin-left: 5px">No</span>                             
+                                    <input type="radio" id="e1" name="are_you_dependent" required onchange="show2()" value="Yes"><span style="color: #fff; margin-left: 5px; margin-right: 1rem;">Yes</span>
+                                    <input type="radio" name="are_you_dependent" required onchange="show(this.value)" value="No" checked><span style="color: #fff; margin-left: 5px">No</span>
                                 </div>
                             </div>
                         </div>
@@ -132,8 +132,8 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Your Phone Number</label>
-                                <input type="tel" class="form-control" name="phone_number" required>
+                                <label>Phone Number</label>
+                                <input id="phone_number" name="phone_number" class="form-control" type="tel" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -159,8 +159,8 @@
                             <div class="form-group">
                                 <label>Do you Have Dependent?</label>
                                 <div style="margin-top: 1rem">
-                                    <input type="radio" id="e1" name="are_you_dependent" required onchange="show3()" value="Yes"><span style="color: #fff; margin-left: 5px; margin-right: 1rem;">Yes</span> 
-                                    <input type="radio" name="are_you_dependent" required onchange="show1(this.value)" value="No"checked><span style="color: #fff; margin-left: 5px">No</span>                             
+                                    <input type="radio" id="e1" name="are_you_dependent" required onchange="show3()" value="Yes"><span style="color: #fff; margin-left: 5px; margin-right: 1rem;">Yes</span>
+                                    <input type="radio" name="are_you_dependent" required onchange="show1(this.value)" value="No" checked><span style="color: #fff; margin-left: 5px">No</span>
                                 </div>
                             </div>
                         </div>

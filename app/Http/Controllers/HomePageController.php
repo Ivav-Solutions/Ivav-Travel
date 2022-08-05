@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Consultation;
 use App\Models\Transaction;
+use Illuminate\Support\Carbon;
 
 class HomePageController extends Controller
 {
@@ -58,7 +59,25 @@ class HomePageController extends Controller
             'payment_status' => 'Success'
         ]);   
 
-        return back()->with('success_report', 'Form Consultation Submitted Successfully, We will get in touch with you shortly!');
+        $data = array(
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone_number' => $request->phone_number,
+            'marital_status' => $request->marital_status,
+            'service' => $request->service,
+            'do_you_have_dependent' => $request->are_you_dependent,
+            'number_of_dependence' => $request->number_of_dependence,
+            'time' => $request->time,
+            'date' => $request->date,
+        );
+
+        /** Send message to the admin */
+        Mail::send('emails.consultation', $data, function ($m) use ($data) {
+            $m->to($data['email'])->subject('Consultation Details');
+        });
+
+
+        return back()->with('success_report', 'Thank you for consulting us today, A message has been sent to your mail!');
     }
 
     public function post_uk_global_talent_program(Request $request) 
@@ -182,7 +201,24 @@ class HomePageController extends Controller
                 'status' => $result->data->status,
             ]);
 
-            return redirect()->route('consultation.successful')->with('success_report', 'Registration Completed, Please login');
+            $data = array(
+                'name' => $consultation->name,
+                'email' => $consultation->email,
+                'phone_number' => $consultation->phone_number,
+                'marital_status' => $consultation->marital_status,
+                'service' => $consultation->services,
+                'do_you_have_dependent' => $consultation->do_you_have_dependent,
+                'number_of_dependence' => $consultation->number_of_dependence,
+                'time' => $consultation->time,
+                'date' => $consultation->date,
+            );
+    
+            /** Send message to the admin */
+            Mail::send('emails.consultation', $data, function ($m) use ($data) {
+                $m->to($data['email'])->subject('Consultation Details');
+            });
+
+            return redirect()->route('consultation.successful');
         }
     }
 
@@ -223,12 +259,48 @@ class HomePageController extends Controller
             $m->to($data['admin'])->subject('Contact Form Notification');
         });
 
-        return back()->with('success_report', 'Form Submitted Successfully, We will get in touch with you shortly!');
+        return back()->with('success_report', 'Thanks for contacting us, We will get in touch with you shortly!');
     }
 
     public function book_consultation()
     {
         return view('book_consultation');
+    }
+
+    public function request_quote(Request $request)
+    {
+        /** Store information to include in mail in $data as an array */
+        $data = array(
+            'name' => request()->name,
+            'email' => request()->email,
+            'service' => request()->service,
+        );
+
+        if($request->service == "Under Graduate")
+        {
+            /** Send message to the admin */
+            Mail::send('emails.undergraduate', $data, function ($m) use ($data) {
+                $m->to($data['email'])->subject('Get A Quote');
+            });
+        }
+
+        if($request->service == "Post Graduate")
+        {
+            /** Send message to the admin */
+            Mail::send('emails.postgraduate', $data, function ($m) use ($data) {
+                $m->to($data['email'])->subject('Get A Quote');
+            });
+        }
+
+        if($request->service == "UK Global Talent Program")
+        {
+            /** Send message to the admin */
+            Mail::send('emails.uk_global_talent_program', $data, function ($m) use ($data) {
+                $m->to($data['email'])->subject('Get A Quote');
+            });
+        }
+
+        return back()->with('success_report', 'Thank you for requesting for a quote, kindly check your mail to see our quote!');
     }
 
     public function admin_login()
