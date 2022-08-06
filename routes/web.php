@@ -36,6 +36,16 @@ Auth::routes();
 
 // Admin
 Route::get('/admin/login', [App\Http\Controllers\HomePageController::class, 'admin_login']);
+Route::post('/admin/login', [App\Http\Controllers\HomePageController::class, 'login_admin'])->name('login.admin');
+
 Route::middleware(['auth', 'isAdmin'])->group(function () {
-    Route::get('/admin/dashboard', [App\Http\Controllers\AdminController::class, 'admin_login']);
+    Route::get('/admin/dashboard', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
+    Route::get('/admin/consultation/undergraduate', [App\Http\Controllers\AdminController::class, 'undergraduate'])->name('admin.undergraduate');
+    Route::get('/admin/consultation/postgraduate', [App\Http\Controllers\AdminController::class, 'postgraduate'])->name('admin.postgraduate');
+    Route::get('/admin/consultation/uk_global_talent_program', [App\Http\Controllers\AdminController::class, 'uk_global_talent_program'])->name('admin.uk_global_talent_program');
+    Route::get('/admin/transactions', [App\Http\Controllers\AdminController::class, 'transactions'])->name('admin.transactions');
+    Route::get('/admin/profile', [App\Http\Controllers\AdminController::class, 'profile'])->name('admin.profile');
+    Route::post('/admin/profile/update', [App\Http\Controllers\AdminController::class, 'update_profile'])->name('admin.update.profile');
+    Route::post('/admin/password/update', [App\Http\Controllers\AdminController::class, 'update_password'])->name('admin.update.password');
+    Route::get('/admin/download/cv/{id}', [App\Http\Controllers\AdminController::class, 'download_cv'])->name('admin.download.cv');
 });

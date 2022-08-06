@@ -7,7 +7,8 @@
                     <a href="/" class="logo">
                         <img src="{{URL::asset('assets/img/ivavtravel_logo.png')}}" alt="image">
                     </a>
-                    <p>Lorem ipsum dolor sit amet sadipscing elitr, sed diam no tempor invidunt ut.</p>
+                    <p>We will help you fast track your admission into any abroad university of your choice and
+                        position you to grab the best scholarship offer available.</p>
                 </div>
             </div>
 

@@ -17,11 +17,9 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user()->account_type == 'Administrator'){
+        if (Auth::user()->account_type == 'Administrator')
+        {
             return $next($request);
-          } else {
-            return redirect('/home');
-          }
         }
     }
 }

@@ -11,7 +11,9 @@
                 <div class="container">
                     <div class="signin-form">
                         <h2>Admin Login In</h2>
-                        <form>
+                        @includeIf('layouts.error_template')
+                        <form class="sign-div" method="POST" action="{{ route('login.admin') }}">
+                            @csrf
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="email" name="email"> 
                             </div>

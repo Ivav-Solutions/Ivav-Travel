@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Mail;
 use App\Models\Consultation;
 use App\Models\Transaction;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class HomePageController extends Controller
 {
@@ -252,7 +256,7 @@ class HomePageController extends Controller
             'subject' => request()->subject,
             'description' => request()->message,
             'created_at' => now(),
-            'admin' => 'contact@ivavtravel.com',
+            'admin' => 'promiseezema11@gmail.com',
         );
         /** Send message to the admin */
         Mail::send('emails.contact', $data, function ($m) use ($data) {
@@ -306,5 +310,37 @@ class HomePageController extends Controller
     public function admin_login()
     {
         return view ('auth.admin_login');
+    }
+
+    public function login_admin(Request $request)
+    {
+        $this->validate($request, [
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', 'min:8'],
+        ]);
+        
+        $input = $request->only(['email', 'password']);
+        
+        $user = User::query()->where('email', $request->email)->first();
+
+        if ($user && !Hash::check($request->password, $user->password)){
+            return back()->with('failure_report', 'Incorrect Password!');
+        }
+
+        if(!$user || !Hash::check($request->password, $user->password)) {
+            return back()->with('failure_report', 'Email does\'nt exist');
+        }
+
+        // authentication attempt
+        if (auth()->attempt($input)) {
+            if($user->account_type == 'Administrator'){
+                return redirect()->route('dashboard');
+            }
+           
+            return back()->with('failure_report', 'You are not an Administrator');
+                    
+        } else {
+            return back()->with('failure_report', 'User authentication failed.');
+        }
     }
 }

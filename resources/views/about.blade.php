@@ -21,10 +21,13 @@
 
             <div class="col-lg-6 col-md-12 p-0">
                 <div class="about-text">
-                    <span class="sub-title">ABOUT ALL OF US</span>
-                    <h2>One of the Fastest Way to Gain Success</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Adasta na lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua.</p>
+                    <span class="sub-title" style="font-size: 2rem; font-weight: 700;">ABOUT ALL OF US</span>
+                    <!-- <h2>One of the Fastest Way to Gain Success</h2> -->
+                    <p>We are a Nigerian owned world class travel agency with an office in Lagos but headquartered in
+                        the United Kingdom.</p>
+                    <p>Our utmost priority is to make your travelling to the UK and other European countries hassle-free.</p>
+                    <p>For this reason, our team of dedicated abroad study experts will hold you by the hand and guide
+                        you in every way so that your admission and travel plans are safely taken care of. </p>
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="single-about-box">
@@ -58,9 +61,9 @@
                 <div class="what-we-do-text">
                     <span class="sub-title">SEE WHAT WE DO</span>
                     <h2>Information is the Main Point to Success</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Adasta na lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    <p>ai to ankasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Adasta na lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod tempor invidunt ut labore et dolore magna.</p>
-                    <a href="contact.html" class="default-btn">Contact Us <i class="ri-arrow-right-line"></i></a>
+                    <a href="/contact" class="default-btn">Contact Us <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
 
