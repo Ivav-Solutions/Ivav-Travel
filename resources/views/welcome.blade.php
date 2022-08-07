@@ -20,10 +20,14 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <span class="sub-title">ABOUT US</span>
-                    <h2>What Will You Get From Our Dedicated Company</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At ve ro eos et accusam et justo duo dolores et ea rebum.</p>
-                    <ul class="features-list">
+                    <span class="sub-title" style="font-size: 2rem; font-weight: 700;">ABOUT ALL OF US</span>
+                    <!-- <h2>What Will You Get From Our Dedicated Company</h2> -->
+                    <p>We are a Nigerian owned world class travel agency with an office in Lagos but headquartered in
+                        the United Kingdom.</p>
+                    <p>Our utmost priority is to make your travelling to the UK and other European countries hassle-free.</p>
+                    <p>For this reason, our team of dedicated abroad study experts will hold you by the hand and guide
+                        you in every way so that your admission and travel plans are safely taken care of. </p>
+                    <!-- <ul class="features-list">
                         <li>
                             <div class="number">01</div>
                             <h3>Consistency</h3>
@@ -34,7 +38,7 @@
                             <h3>Strategy</h3>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra mpor invidunt ut labore et dolore magna aliquyam erat.</p>
                         </li>
-                    </ul>
+                    </ul> -->
                     <a href="/about" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
@@ -123,30 +127,6 @@
     </div>
 </div>
 <!-- End Free Quote Area -->
-
-<!-- Start What We Do Area -->
-<div class="what-we-do-area pb-100 bg-fbf9f7">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-                <div class="what-we-do-text">
-                    <span class="sub-title">SEE WHAT WE DO</span>
-                    <h2>Information is the Main Point to Success</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Adasta na lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod tempor invidunt ut labore et dolore magna.</p>
-                    <a href="/contact" class="default-btn">Contact Us <i class="ri-arrow-right-line"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <div class="what-we-do-img">
-                    <img src="assets/img/what-we-do/what-we-do2.jpg" alt="image">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End What We Do Area -->
 
 <!-- Start Team Area -->
 <div class="team-area pt-100 pb-70">
@@ -266,24 +246,24 @@
                     <h2>Lets Meet Our Clients</h2>
                     <div class="testimonial-slides owl-carousel owl-theme">
                         <div class="testimonial-desc">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam lores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsu adasta na. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            <p>Thanks to Ivavtravel for making our UK family relocation a successful. The services were more than just professional. Ivavtravel is that travel consultant that goes over and beyond to make client comfortable.</p>
                             <div class="info">
-                                <h3>[Name]</h3>
-                                <span>CEO, Switch Color Ltd.</span>
+                                <h3>The Thompsons</h3>
+                                <!-- <span>CEO, Switch Color Ltd.</span> -->
                             </div>
                         </div>
                         <div class="testimonial-desc">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam lores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsu adasta na. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            <p>Ivavtravel was exceptional. We were initially scared due to many fraudulent companies out there but it can only be Ivavtravel. Outstanding delivery. Our family now resides in the UK.</p>
                             <div class="info">
-                                <h3>[Name]</h3>
-                                <span>[Position]</span>
+                                <h3>The Tugbiyeles</h3>
+                                <!-- <span>[Position]</span> -->
                             </div>
                         </div>
                         <div class="testimonial-desc">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam lores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsu adasta na. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            <p>Ivavtravel was God’s sent. I will give 100 STARSSSSS. We faced many challenges but Ivavtravel ensured our Uk family relocation yielded positively. They are the best and I recommend anytime.</p>
                             <div class="info">
-                                <h3>[Name]</h3>
-                                <span>[Position]</span>
+                                <h3>Deborah Falodun</h3>
+                                <!-- <span>[Position]</span> -->
                             </div>
                         </div>
                     </div>

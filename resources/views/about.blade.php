@@ -54,15 +54,39 @@
 <!-- End About Area -->
 
 <!-- Start What We Do Area -->
-<div class="what-we-do-area ptb-100 bg-fbf9f7">
+<div class="what-we-do-area pb-100 bg-fbf9f7">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="what-we-do-text">
-                    <span class="sub-title">SEE WHAT WE DO</span>
-                    <h2>Information is the Main Point to Success</h2>
-                    <p>ai to ankasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Adasta na lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod tempor invidunt ut labore et dolore magna.</p>
+                    <span class="sub-title" style="font-size: 2rem; font-weight: 700;">OUR PROCESS</span>
+                    <!-- <h2>Information is the Main Point to Success</h2> -->
+                    <p>When you partner with us, it's really easy for you to set your ball rolling and become a student in 
+                        your dream university. Here's how to achieve that in no time</p>
+                    <ul class="features-list" style="list-style-type: none;">
+                        <li>
+                            <h3>Tell Us Your Needs</h3>
+                            <p>Simply fill our consultation form and schedule a time with us.
+                            One of our experts will have a personal discussion with you to understand your needs and outline what specific steps to take.</p>    
+                        </li>
+                        <li>
+                            <h3>Complete Your Application</h3>
+                            <p>Starting and submitting an application could be daunting. Our team will assist you to make it less 
+                                stressful. All you need to do is just sit back and watch your offers roll in.</p>    
+                        </li>
+                        <li>
+                            <h3>Apply for Visa</h3>
+                            <p>Admission is not enough, applying and securing a Visa guarantees travelling abroad. Anyway, 
+                                we won't back out but assist you all the way.</p>    
+                        </li>
+                        <li>
+                            <h3>Complete Your Travel Plans</h3>
+                            <p>Our team will help you with the secured and affordable flight tickets booking and make your stay 
+                            comfortable by arranging for the best accommodation.</p>
+                            <p>If you choose to make some money while you study, we won't hesitate to connect you to 
+                                different job opportunities.</p>    
+                        </li>
+                    </ul>
                     <a href="/contact" class="default-btn">Contact Us <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
@@ -168,27 +192,27 @@
             <div class="col-lg-6 col-md-12">
                 <div class="testimonial-content">
                     <span class="sub-title text-center">TESTIMONIAL</span>
-                    <h2>Lets Meet Up With Our All Of The Clients Says At A Glance</h2>
+                    <h2>Lets Meet Our Clients</h2>
                     <div class="testimonial-slides owl-carousel owl-theme">
                         <div class="testimonial-desc">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam lores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsu adasta na. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            <p>Thanks to Ivavtravel for making our UK family relocation a successful. The services were more than just professional. Ivavtravel is that travel consultant that goes over and beyond to make client comfortable.</p>
                             <div class="info">
-                                <h3>[Name]</h3>
-                                <span>CEO, Switch Color Ltd.</span>
+                                <h3>The Thompsons</h3>
+                                <!-- <span>CEO, Switch Color Ltd.</span> -->
                             </div>
                         </div>
                         <div class="testimonial-desc">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam lores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsu adasta na. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            <p>Ivavtravel was exceptional. We were initially scared due to many fraudulent companies out there but it can only be Ivavtravel. Outstanding delivery. Our family now resides in the UK.</p>
                             <div class="info">
-                                <h3>[Name]</h3>
-                                <span>[Position]</span>
+                                <h3>The Tugbiyeles</h3>
+                                <!-- <span>[Position]</span> -->
                             </div>
                         </div>
                         <div class="testimonial-desc">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra eirmod ut labore et dolore magna aliquyam erat, sed diammi maxil voluptua. At vero eos et accusam lores et ea rebum. Stet clitaiai to ankasd gubergren, no sea takimata sanctus est Lorem ipsu adasta na. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            <p>Ivavtravel was God’s sent. I will give 100 STARSSSSS. We faced many challenges but Ivavtravel ensured our Uk family relocation yielded positively. They are the best and I recommend anytime.</p>
                             <div class="info">
-                                <h3>[Name]</h3>
-                                <span>[Position]</span>
+                                <h3>Deborah Falodun</h3>
+                                <!-- <span>[Position]</span> -->
                             </div>
                         </div>
                     </div>

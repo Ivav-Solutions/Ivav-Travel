@@ -1,11 +1,5 @@
 @extends('layouts.admin_frontend')
 
-
-
-@section('banner')
-@includeIf('layouts.banner')
-@endsection
-
 @section('page-content')
 
 @section('header')
