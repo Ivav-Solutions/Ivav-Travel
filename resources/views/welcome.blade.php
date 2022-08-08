@@ -20,26 +20,11 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <span class="sub-title" style="font-size: 2rem; font-weight: 700;">ABOUT ALL OF US</span>
+                    <span class="sub-title" style="font-size: 2rem; font-weight: 700;">ABOUT US</span>
                     <!-- <h2>What Will You Get From Our Dedicated Company</h2> -->
-                    <p>We are a Nigerian owned world class travel agency with an office in Lagos but headquartered in
-                        the United Kingdom.</p>
-                    <p>Our utmost priority is to make your travelling to the UK and other European countries hassle-free.</p>
-                    <p>For this reason, our team of dedicated abroad study experts will hold you by the hand and guide
-                        you in every way so that your admission and travel plans are safely taken care of. </p>
-                    <!-- <ul class="features-list">
-                        <li>
-                            <div class="number">01</div>
-                            <h3>Consistency</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra mpor invidunt ut labore et dolore magna aliquyam erat.</p>
-                        </li>
-                        <li>
-                            <div class="number">02</div>
-                            <h3>Strategy</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ant extra mpor invidunt ut labore et dolore magna aliquyam erat.</p>
-                        </li>
-                    </ul> -->
-                    <a href="/about" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
+                    <p>As a dignified education and travel consultancy, our utmost priority is to make your travelling to the UK and other countries hassle-free.</p>
+                    <p>For this reason, our team of dedicated experts will hold you by the hand and guide you in every way so that your admission and travel plans are safely taken care of.</p>
+                        <a href="/about" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
         </div>
@@ -263,6 +248,13 @@
                             <p>Ivavtravel was God’s sent. I will give 100 STARSSSSS. We faced many challenges but Ivavtravel ensured our Uk family relocation yielded positively. They are the best and I recommend anytime.</p>
                             <div class="info">
                                 <h3>Deborah Falodun</h3>
+                                <!-- <span>[Position]</span> -->
+                            </div>
+                        </div>
+                        <div class="testimonial-desc">
+                            <p>Ivavtravel was like home, very welcoming and highly concerned. They made my Uk Study a reality. Even after I got my UK study visa, they assisted with my ticket and entire settling upon arrival. Thanks Ivavtravel.</p>
+                            <div class="info">
+                                <h3>Opeyemi</h3>
                                 <!-- <span>[Position]</span> -->
                             </div>
                         </div>

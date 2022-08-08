@@ -45,6 +45,14 @@
                                 <h3>Strategy</h3>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div class="single-about-box">
+                                <div class="icon">
+                                    <i class="ri-settings-2-line"></i>
+                                </div>
+                                <h3>Integrity</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -212,6 +220,13 @@
                             <p>Ivavtravel was God’s sent. I will give 100 STARSSSSS. We faced many challenges but Ivavtravel ensured our Uk family relocation yielded positively. They are the best and I recommend anytime.</p>
                             <div class="info">
                                 <h3>Deborah Falodun</h3>
+                                <!-- <span>[Position]</span> -->
+                            </div>
+                        </div>
+                        <div class="testimonial-desc">
+                            <p>Ivavtravel was like home, very welcoming and highly concerned. They made my Uk Study a reality. Even after I got my UK study visa, they assisted with my ticket and entire settling upon arrival. Thanks Ivavtravel.</p>
+                            <div class="info">
+                                <h3>Opeyemi</h3>
                                 <!-- <span>[Position]</span> -->
                             </div>
                         </div>
