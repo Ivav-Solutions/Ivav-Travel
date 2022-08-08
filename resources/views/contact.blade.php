@@ -26,7 +26,8 @@
                                     <i class="ri-home-7-line"></i>
                                 </div>
                                 <h3>Main Office</h3>
-                                <p>[address]</p>
+                                <p>Shelton Street, London.</p>
+                                <p>Lagos, Nigeria.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
@@ -35,8 +36,7 @@
                                     <i class="ri-phone-line"></i>
                                 </div>
                                 <h3>Our Phone</h3>
-                                <p><span>Call:</span><a href="">[phone_1]</a></p>
-                                <p><span>Call:</span><a href="">[phone_2]</a></p>
+                                <p><span>Call:</span><a href="tel:+447949317523">+447949317523</a></p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
@@ -45,8 +45,7 @@
                                     <i class="ri-mail-star-line"></i>
                                 </div>
                                 <h3>Email Address</h3>
-                                <p><span>Email:</span><a href=""><span class="__cf_email__" data-cfemail="97fff2fbfbf8d7f2f9e5eeb9f4f8fa">[email&#160;protected]</span></a></p>
-                                <p><span>Email:</span><a href=""><span class="__cf_email__" data-cfemail="8ae3e4ece5caefe4f8f3a4e9e5e7">[email&#160;protected]</span></a></p>
+                                <p><span>Email:</span><a href="mailto:info@ivavtravel.com">info@ivavtravel.com</a></p>
                             </div>
                         </div>
                     </div>
