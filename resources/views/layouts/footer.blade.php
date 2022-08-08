@@ -39,11 +39,11 @@
                 <div class="single-footer-widget">
                     <h3>Opening Hours</h3>
                     <ul class="opening-hours">
-                        <li>SUN - MON: <span>8:00 AM - 9:00 PM</span></li>
-                        <li>TUE: <span>8:00 AM - 9:00 PM</span></li>
-                        <li>WED: <span>8:00 AM - 9:00 PM</span></li>
-                        <li>THU: <span>8:00 AM - 9:00 PM</span></li>
-                        <li>FRI-SAT: <span>Closed</span></li>
+                        <li>MON-TUE: <span>8:00 AM - 6:00 PM</span></li>
+                        <li>TUE: <span>8:00 AM - 6:00 PM</span></li>
+                        <li>WED: <span>8:00 AM - 6:00 PM</span></li>
+                        <li>FRI-SAT: <span>8:00 AM - 6:00 PM</span></li>
+                        <li>SUN: <span>Closed</span></li>
                     </ul>
                 </div>
             </div>
