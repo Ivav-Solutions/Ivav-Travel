@@ -184,7 +184,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <p style="color:#fff"><span style="color: red">Note:</span> This service requires a charge fee of One Hundred Thousand</p>
+                                <p style="color:#fff"><span style="color: red">Note:</span> This service requires a charge fee of One Hundred Thousand (#100,000)</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
