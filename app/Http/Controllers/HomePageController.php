@@ -103,71 +103,52 @@ class HomePageController extends Controller
             'date' => $request->date
         ]);   
 
-        // $SECRET_KEY = config('app.paystack_secret_key');;
+        $SECRET_KEY = config('app.paystack_secret_key');;
 
-        // $url = "https://api.paystack.co/transaction/initialize";
+        $url = "https://api.paystack.co/transaction/initialize";
 
-        // $fields = [
-        //     'email' => $request->email,
-        //     'amount' => 100000 * 100,
-        //     'callback_url' => url('/payment/callback'),
-        //     'metadata' => [
-        //         'consultation_id' => $Consultation->id,
-        //         'name' => $request->name
-        //     ]
-        // ];
+        $fields = [
+            'email' => $request->email,
+            'amount' => 100000 * 100,
+            'callback_url' => url('/payment/callback'),
+            'metadata' => [
+                'consultation_id' => $Consultation->id,
+                'name' => $request->name
+            ]
+        ];
 
-        // $fields_string = http_build_query($fields);
-        // //open connection
-        // $ch = curl_init();
+        $fields_string = http_build_query($fields);
+        //open connection
+        $ch = curl_init();
         
-        // //set the url, number of POST vars, POST data
-        // curl_setopt($ch, CURLOPT_URL, $url);
-        // curl_setopt($ch, CURLOPT_POST, true);
-        // curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
-        // curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        //     "Authorization: Bearer $SECRET_KEY",
-        //     "Cache-Control: no-cache",
-        // ));
+        //set the url, number of POST vars, POST data
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            "Authorization: Bearer $SECRET_KEY",
+            "Cache-Control: no-cache",
+        ));
         
         //So that curl_exec returns the contents of the cURL; rather than echoing it
-        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
         
         //execute post
-        // $paystack_result = curl_exec($ch);
+        $paystack_result = curl_exec($ch);
         
-        // $result = json_decode($paystack_result);
+        $result = json_decode($paystack_result);
 
         //  return $result;
-        // $authorization_url = $result->data->authorization_url;
-        // $paystack_status = $result->status;
+        $authorization_url = $result->data->authorization_url;
+        $paystack_status = $result->status;
 
         // return dd($result->status);
 
-        // if ($paystack_status == true) {
-        //     return redirect()->to($authorization_url);
-        // } else {
-        //     return back()->with('failure_report', 'Payment failed. Response not ok, please try again!');
-        // }
-
-        $data = array(
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone_number' => $request->phone_number,
-            'marital_status' => $request->marital_status,
-            'service' => $request->service,
-            'do_you_have_dependent' => $request->are_you_dependent,
-            'number_of_dependence' => $request->number_of_dependence,
-            'time' => $request->time,
-            'date' => $request->date,
-        );
-
-         /** Send message to the admin */
-         Mail::send('emails.consultation', $data, function ($m) use ($data) {
-            $m->to($data['email'])->subject('Consultation Details');
-        });
-
-        return redirect()->route('consultation.successful');
+        if ($paystack_status == true) {
+            return redirect()->to($authorization_url);
+        } else {
+            return back()->with('failure_report', 'Payment failed. Response not ok, please try again!');
+        }
     }
 
     public function handleGatewayCallback()

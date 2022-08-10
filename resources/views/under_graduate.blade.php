@@ -15,18 +15,18 @@
         <div class="row">
             <div class="col-lg-8 col-md-12">
                 <div class="services-details-desc">
-                    <h3>Discuss About The Service</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam <a href="#">voluptuased</a> diam voluptua.</p>
+                    <h3>UK Under Graduate Program</h3>
+                    <p>Admissions into UK universities are managed by the  Universities and Colleges Admissions Service (UCAS). It's is a UK-based organisation whose main designation is to facilitate the application process for British universities. </p>
                     <img src="{{URL::asset('assets/img/services/services3.jpg')}}" alt="image">
-                    <ul>
-                        <li>a console</li>
-                        <li>Two Joy-Con controllers that are detachable</li>
-                        <li>A grip that enables you to combine them into a single gamepad for play on the TV</li>
-                        <li>Two straps for turning the Joy-Cons into controllers</li>
-                        <li>A dock which you can use to connect your console to the television for traditional gameplay</li>
-                    </ul>
-                    <h3>Consultation</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p>Most of the universities and other higher education colleges in the UK employ the service of UCAS to accept applications.</p> 
+                    <p>So, if you're coming in as a undergraduate, you must apply through UCAS. </p>
+                    <h3>Where can I study an undergraduate degree?</h3>
+                    <p>There are over 130 UK universities offering undergraduate courses. 
+                        Also, there are over 65,000 UK undergraduate courses. 
+                        Your desired course will influence your university choice. </p>
+                    <h3>Where We Come In</h3>
+                    <p>Starting an undergraduate degree programme in the UK may be tedious. From application to settling down, all may seem overwhelming. But our time tested assistance will help you navigate this journey easily. </p>    
+                    <a href="/book_consultation" class="default-btn">Book Consultation With Us <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
 

@@ -18,7 +18,6 @@
                 <div class="contact-content">
                     <span class="sub-title">CONTACT US</span>
                     <h2>Contact Us With Your Details & Ready To Start</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-contact-info-box">
@@ -69,8 +68,6 @@
             <div class="col-lg-6 col-md-12">
                 <div class="contact-form">
                     <span class="sub-title">SEND MESSAGE</span>
-                    <h2>Lets Provide Us a Message & Contact Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolo lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy liquyam erat, sed diam voluptua.</p>
                     @includeIf('layouts.error_template')
                     <form action="/contact-us" method="post"> 
                         @csrf
