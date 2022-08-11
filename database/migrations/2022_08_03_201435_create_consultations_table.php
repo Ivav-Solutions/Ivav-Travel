@@ -22,7 +22,7 @@ class CreateConsultationsTable extends Migration
             $table->string('services')->nullable();
             $table->string('cv')->nullable();
             $table->string('do_you_have_dependent')->nullable();
-            $table->string('number_of_dependence')->default(0);
+            $table->string('number_of_dependence')->nullable();
             $table->date('date');
             $table->time('time');
             $table->string('payment_status')->default('Pending');;
