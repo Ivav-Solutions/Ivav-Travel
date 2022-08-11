@@ -23,11 +23,8 @@
                 <div class="about-text">
                     <span class="sub-title" style="font-size: 2rem; font-weight: 700;">ABOUT ALL OF US</span>
                     <!-- <h2>One of the Fastest Way to Gain Success</h2> -->
-                    <p>We are a Nigerian owned world class travel agency with an office in Lagos but headquartered in
-                        the United Kingdom.</p>
-                    <p>Our utmost priority is to make your travelling to the UK and other European countries hassle-free.</p>
-                    <p>For this reason, our team of dedicated abroad study experts will hold you by the hand and guide
-                        you in every way so that your admission and travel plans are safely taken care of. </p>
+                    <p>As a dignified education and travel consultancy, our utmost priority is to make your travelling to the UK and other countries hassle-free.</p>
+                    <p>For this reason, our team of dedicated experts will hold you by the hand and guide you in every way so that your admission and travel plans are safely taken care of.</p>
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="single-about-box">
