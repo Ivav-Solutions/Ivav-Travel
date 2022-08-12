@@ -200,8 +200,8 @@
                     <div class="icon">
                         <i class="ri-settings-5-line"></i>
                     </div>
-                    <h3>Easy Understand</h3>
-                    <p>Our process is not complicated. We carefully listen to your expectations and work out what's best for yo</p></div>
+                    <h3>Easy To Understand</h3>
+                    <p>Our process is not complicated. We carefully listen to your expectations and work out what's best for you.</p></div>
             </div>
 
             <div class="col-lg-3 col-sm-6 col-md-6">
