@@ -5,10 +5,10 @@
             <div class="col-lg-6 col-md-12">
                 <div class="banner-content">
                     <span class="sub-title">WELCOME TO IVAV TRAVEL</span>
-                    <h1>Here's What We Will Do For You</h1>
-                    <p>We will help you fast track your admission into any abroad university of your choice and
-                        position you to grab the best scholarship offer available.</p>
-                    <a href="/contact" class="default-btn">Contact Us <i class="ri-arrow-right-line"></i></a>
+                    <h1>The Best UK Travel Agency in Nigeria</h1>
+                    <p>We will help you fast track your UK travel plans for study, relocation, visitation or vacation
+                        and also position you to grab the best abroad offers available.</p>
+                    <a href="/contact" class="default-btn">Let's Discuss <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
 

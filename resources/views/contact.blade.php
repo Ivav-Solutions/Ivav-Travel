@@ -9,7 +9,6 @@
 @endsection
 
 @section('page-content')
-
 <!-- Start Contact Area -->
 <div class="contact-area ptb-100">
     <div class="container">
@@ -17,7 +16,8 @@
             <div class="col-lg-6 col-md-12">
                 <div class="contact-content">
                     <span class="sub-title">CONTACT US</span>
-                    <h2>Contact Us With Your Details & Ready To Start</h2>
+                    <h2>Our Travel Support Team is ready to help you.</h2>
+                    <p>You can connect with us via the following channels</p>
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-contact-info-box">

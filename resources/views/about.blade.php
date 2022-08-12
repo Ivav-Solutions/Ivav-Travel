@@ -136,7 +136,7 @@
 <!-- End Funfacts Area -->
 
 <!-- Start Team Area -->
-<div class="team-area pt-100 pb-70">
+<!-- <div class="team-area pt-100 pb-70">
     <div class="container">
         <div class="section-title">
             <span class="sub-title">TEAM</span>
@@ -185,7 +185,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- End Team Area -->
 
 <!-- Start Testimonial Area -->

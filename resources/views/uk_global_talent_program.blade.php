@@ -15,18 +15,45 @@
         <div class="row">
             <div class="col-lg-8 col-md-12">
                 <div class="services-details-desc">
-                    <h3>Discuss About The Service</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam <a href="#">voluptuased</a> diam voluptua.</p>
+                    <h3>UK Wants You</h3>
+                    <p>In February 2020, the government of the United Kingdom effected a new programme called Global Talent Visa and it's aimed at attracting talents into UK. </p>
+                    <p>Although they are quite similar in nature, the Global Talent Visa replaced Tier 1 (Exceptional Talent) Visa because of its simplicity. </p>
                     <img src="{{URL::asset('assets/img/services/services3.jpg')}}" alt="image">
-                    <ul>
-                        <li>a console</li>
-                        <li>Two Joy-Con controllers that are detachable</li>
-                        <li>A grip that enables you to combine them into a single gamepad for play on the TV</li>
-                        <li>Two straps for turning the Joy-Cons into controllers</li>
-                        <li>A dock which you can use to connect your console to the television for traditional gameplay</li>
-                    </ul>
-                    <h3>Consultation</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p>To qualify for Global Talent Visa, you must be an exceptional talent or a promising talent in any of the careers listed below: </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>1. Academia or Research</p>
+                                <ul>
+                                    <li>Science</li>
+                                    <li>Medicine</li>
+                                    <li>Engineering</li>
+                                    <li>Humanities</li>
+                                </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>2. Arts and Culture</p>
+                                <ul>
+                                    <li>Combined Arts</li>
+                                    <li>Dance</li>
+                                    <li>Literature</li>
+                                    <li>Music</li>
+                                    <li>Theatre</li>
+                                    <li>Visual Arts</li>
+                                </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>3. Architecture</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>4. Fashion Design</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>5. Film and Television</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>6. Digital Technology</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

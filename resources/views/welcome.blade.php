@@ -40,26 +40,35 @@
             <h2>Our Services At a Glance</h2>
         </div>
 
-
         <div class="services-slides-two owl-carousel owl-theme">
             <div class="single-services-item">
                 <div class="icon">
                     <i class="ri-briefcase-line"></i>
                 </div>
-                <h3><a href="#">Post Graduate Program</a></h3>
+                <h3><a href="/admin/consultation/postgraduate">Post Graduate Program</a></h3>
                 <p>Enrol for your Masters, PhD or Postdoctoral programme in the quickest way possible with our
                     guidance.</p>
-                <a href="#" class="link-btn">Read More</a>
+                <a href="/admin/consultation/postgraduate" class="link-btn">Read More</a>
             </div>
 
             <div class="single-services-item">
                 <div class="icon">
                     <i class="ri-money-dollar-box-line"></i>
                 </div>
-                <h3><a href="#">Under Graduate Prgram</a></h3>
+                <h3><a href="/admin/consultation/undergraduate">Under Graduate Program</a></h3>
                 <p>Start your higher academic journey with our professional recommendation. We will guide you to
                     choose the best university for your desired programme.</p>
-                <a href="#" class="link-btn">Read More</a>
+                <a href="/admin/consultation/undergraduate" class="link-btn">Read More</a>
+            </div>
+
+            <div class="single-services-item">
+                <div class="icon">
+                    <i class="ri-money-dollar-box-line"></i>
+                </div>
+                <h3><a href="/admin/consultation/uk_global_talent_program">UK Global Talent Program</a></h3>
+                <p>Start your higher academic journey with our professional recommendation. We will guide you to
+                    choose the best university for your desired programme.</p>
+                <a href="/admin/consultation/uk_global_talent_program" class="link-btn">Read More</a>
             </div>
         </div>
     </div>
@@ -114,7 +123,7 @@
 <!-- End Free Quote Area -->
 
 <!-- Start Team Area -->
-<div class="team-area pt-100 pb-70">
+<!-- <div class="team-area pt-100 pb-70">
     <div class="container">
         <div class="section-title">
             <span class="sub-title">TEAM</span>
@@ -163,7 +172,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- End Team Area -->
 
 <!-- Start Why Choose Us Area -->
@@ -171,7 +180,7 @@
     <div class="container">
         <div class="section-title">
             <span class="sub-title">REASON OF CHOICE</span>
-            <h2>Why You Choose Us From All Of The Other's</h2>
+            <h2>Why You Should Work With Us</h2>
         </div>
 
         <div class="row justify-content-center">
@@ -181,7 +190,8 @@
                         <i class="ri-rocket-line"></i>
                     </div>
                     <h3>Consistency</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod. To the great and best.</p>
+                    <p>So far, our brand has recorded 99% success rate which means your dream will also become a 
+                        reality very soon if you decide to take a step with us.</p>
                 </div>
             </div>
 
@@ -191,8 +201,7 @@
                         <i class="ri-settings-5-line"></i>
                     </div>
                     <h3>Easy Understand</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod. To the great and best.</p>
-                </div>
+                    <p>Our process is not complicated. We carefully listen to your expectations and work out what's best for yo</p></div>
             </div>
 
             <div class="col-lg-3 col-sm-6 col-md-6">
@@ -201,7 +210,7 @@
                         <i class="ri-briefcase-line"></i>
                     </div>
                     <h3>Professional</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod. To the great and best.</p>
+                    <p>At Ivav Travel, we are meticulous with our service and we constantly work towards a swift delivery.</p>
                 </div>
             </div>
 
@@ -211,7 +220,7 @@
                         <i class="ri-bar-chart-box-line"></i>
                     </div>
                     <h3>Reliable</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod. To the great and best.</p>
+                    <p>Our clients trust us and the reason is simple: we meet and exceed their expectations and that's why they recommend us to their friends and family members.</p>
                 </div>
             </div>
         </div>
