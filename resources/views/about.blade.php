@@ -21,7 +21,7 @@
 
             <div class="col-lg-6 col-md-12 p-0">
                 <div class="about-text">
-                    <span class="sub-title" style="font-size: 2rem; font-weight: 700;">ABOUT ALL OF US</span>
+                    <span class="sub-title" style="font-size: 2rem; font-weight: 700;">ABOUT US</span>
                     <!-- <h2>One of the Fastest Way to Gain Success</h2> -->
                     <p>As a dignified education and travel consultancy, our utmost priority is to make your travelling to the UK and other countries hassle-free.</p>
                     <p>For this reason, our team of dedicated experts will hold you by the hand and guide you in every way so that your admission and travel plans are safely taken care of.</p>
@@ -63,31 +63,34 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
-                <div class="what-we-do-text">
+                <div class="what-we-do-text" style="margin-top: 2rem;">
                     <span class="sub-title" style="font-size: 2rem; font-weight: 700;">OUR PROCESS</span>
                     <!-- <h2>Information is the Main Point to Success</h2> -->
                     <p>When you partner with us, it's really easy for you to set your ball rolling and become a student in 
                         your dream university. Here's how to achieve that in no time</p>
                     <ul class="features-list" style="list-style-type: none;">
-                        <li>
+                        <li style="margin-bottom: 1.5rem">
                             <h3>Tell Us Your Needs</h3>
                             <p>Simply fill our consultation form and schedule a time with us.
                             One of our experts will have a personal discussion with you to understand your needs and outline what specific steps to take.</p>    
                         </li>
-                        <li>
+                        <li style="margin-bottom: 1.5rem">
                             <h3>Complete Your Application</h3>
                             <p>Starting and submitting an application could be daunting. Our team will assist you to make it less 
                                 stressful. All you need to do is just sit back and watch your offers roll in.</p>    
                         </li>
-                        <li>
+                        <li style="margin-bottom: 1.5rem">
                             <h3>Apply for Visa</h3>
                             <p>Admission is not enough, applying and securing a Visa guarantees travelling abroad. Anyway, 
                                 we won't back out but assist you all the way.</p>    
                         </li>
-                        <li>
+                        <li style="margin-bottom: 1.5rem">
                             <h3>Complete Your Travel Plans</h3>
                             <p>Our team will help you with the secured and affordable flight tickets booking and make your stay 
                             comfortable by arranging for the best accommodation.</p>
+                        </li>
+                        <li style="margin-bottom: 1.5rem">
+                            <h3>Earn While You Study</h3>
                             <p>If you choose to make some money while you study, we won't hesitate to connect you to 
                                 different job opportunities.</p>    
                         </li>

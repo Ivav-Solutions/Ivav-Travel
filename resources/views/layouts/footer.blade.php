@@ -54,7 +54,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-7 col-sm-6">
-                    <p>Copyright @ {{ date('Y') }} {{config('app.name')}}</p>
+                    <p>Copyright @ 2021 {{config('app.name')}}</p>
                 </div>
 
                 <div class="col-lg-6 col-md-5 col-sm-6">

@@ -24,7 +24,7 @@
                     <!-- <h2>What Will You Get From Our Dedicated Company</h2> -->
                     <p>As a dignified education and travel consultancy, our utmost priority is to make your travelling to the UK and other countries hassle-free.</p>
                     <p>For this reason, our team of dedicated experts will hold you by the hand and guide you in every way so that your admission and travel plans are safely taken care of.</p>
-                        <a href="/about" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
+                        <a href="/about-us" class="default-btn">Read More <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
         </div>
@@ -45,30 +45,30 @@
                 <div class="icon">
                     <i class="ri-briefcase-line"></i>
                 </div>
-                <h3><a href="/admin/consultation/postgraduate">Post Graduate Program</a></h3>
+                <h3><a href="/service/uk_study_program/post_graduate">Post Graduate Program</a></h3>
                 <p>Enrol for your Masters, PhD or Postdoctoral programme in the quickest way possible with our
                     guidance.</p>
-                <a href="/admin/consultation/postgraduate" class="link-btn">Read More</a>
+                <a href="/service/uk_study_program/post_graduate" class="link-btn">Read More</a>
             </div>
 
             <div class="single-services-item">
                 <div class="icon">
                     <i class="ri-money-dollar-box-line"></i>
                 </div>
-                <h3><a href="/admin/consultation/undergraduate">Under Graduate Program</a></h3>
+                <h3><a href="/service/uk_study_program/under_graduate">Under Graduate Program</a></h3>
                 <p>Start your higher academic journey with our professional recommendation. We will guide you to
                     choose the best university for your desired programme.</p>
-                <a href="/admin/consultation/undergraduate" class="link-btn">Read More</a>
+                <a href="/service/uk_study_program/under_graduatee" class="link-btn">Read More</a>
             </div>
 
             <div class="single-services-item">
                 <div class="icon">
                     <i class="ri-money-dollar-box-line"></i>
                 </div>
-                <h3><a href="/admin/consultation/uk_global_talent_program">UK Global Talent Program</a></h3>
+                <h3><a href="/service/uk_global_talent_program">UK Global Talent Program</a></h3>
                 <p>Start your higher academic journey with our professional recommendation. We will guide you to
                     choose the best university for your desired programme.</p>
-                <a href="/admin/consultation/uk_global_talent_program" class="link-btn">Read More</a>
+                <a href="/service/uk_global_talent_program" class="link-btn">Read More</a>
             </div>
         </div>
     </div>
