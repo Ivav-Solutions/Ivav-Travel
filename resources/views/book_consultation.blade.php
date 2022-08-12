@@ -62,18 +62,22 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
+                                <label>Sex</label>
+                                <select class="form-select" name="sex" required>
+                                    <option>-- Select Sex --</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
                                 <label>Services</label>
                                 <select class="form-select" name="service" required>
                                     <option>-- Select Service --</option>
                                     <option value="Under Graduate">Under Graduate</option>
                                     <option value="Post Graduate">Post Graduate</option>
                                 </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group">
-                                <label>Your CV</label>
-                                <input type="file" class="form-control" name="cv" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -93,14 +97,43 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Time</label>
-                                <input type="time" class="form-control" name="time" required>
+                                <label>Do you have any city of choice?</label>
+                                <div style="margin-top: 1rem">
+                                    <input type="radio" id="e1" name="any_city_of_choice" required onchange="display2()" value="Yes"><span style="color: #fff; margin-left: 5px; margin-right: 1rem;">Yes</span>
+                                    <input type="radio" name="any_city_of_choice" required onchange="display(this.value)" value="No" checked><span style="color: #fff; margin-left: 5px">No</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="city" style="display: none;" class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>Enter the city of your choice</label>
+                                <input type="text" class="form-control" name="city_of_your_choice">
+                                <p>Minimum of three cities</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Date</label>
-                                <input type="date" class="form-control" name="date" required>
+                                <label>Do you have any course reference?</label>
+                                <div style="margin-top: 1rem">
+                                    <input type="radio" id="e1" name="any_course_of_reference" required onchange="course2()" value="Yes"><span style="color: #fff; margin-left: 5px; margin-right: 1rem;">Yes</span>
+                                    <input type="radio" name="any_course_of_reference" required onchange="course(this.value)" value="No" checked><span style="color: #fff; margin-left: 5px">No</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="reference" style="display: none;" class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>Enter the course of reference?</label>
+                                <input type="text" class="form-control" name="course_of_reference">
+                                <p>Minimum of three courses</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Your Documents</label>
+                                <input type="file" class="form-control" name="documents[]" required multiple>
+                                <p>Bachelor of Science/Higher National Diploma, Ordinary National Diploma(If Applicable), Marriage Certificate (If Applicable),
+                                    Change of Name (If Applicable), International Passport, Academic Reference Letter, Work Reference Letter, Statement of Purpose,
+                                    Academic Transcript </p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">

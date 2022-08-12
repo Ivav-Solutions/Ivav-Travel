@@ -42,6 +42,22 @@
             document.getElementById('show_box').style.display = 'block';
         }
 
+        function display(str) {
+            document.getElementById('city').style.display = 'none';
+        }
+
+        function display2(sign) {
+            document.getElementById('city').style.display = 'block';
+        }
+
+        function course(str) {
+            document.getElementById('reference').style.display = 'none';
+        }
+
+        function course2(sign) {
+            document.getElementById('reference').style.display = 'block';
+        }
+
         window.setTimeout(function() {
             $(".alert-timeout").fadeTo(500, 0).slideUp(1000, function() {
                 $(this).remove();

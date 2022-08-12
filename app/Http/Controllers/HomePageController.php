@@ -41,12 +41,13 @@ class HomePageController extends Controller
         //Validate Request
         $this->validate($request, [
             'phone_number' => 'numeric',
-            'cv' => 'required|mimes:pdf,docx'
+            'documents.*' => 'required|mimes:jpeg,png,jpg,docx,pdf',
         ]);
 
-        if (request()->hasFile('cv')) {
-            $filename = request()->cv->getClientOriginalName();
-            request()->cv->storeAs('cv', $filename, 'public');
+        foreach ($request->documents as $document) {
+            $filename = $document->getClientOriginalName();
+            $document->storeAs('documents/' + $request->name, $filename, 'public');
+            $images[]=$filename;
         }
 
         Consultation::create([
@@ -54,13 +55,15 @@ class HomePageController extends Controller
             'email' => $request->email,
             'phone_number' => $request->phone_number,
             'marital_status' => $request->marital_status,
+            'sex' => $request->sex,
             'services' => $request->service,
-            'cv' => $filename,
+            'documents' => implode(",",$images),
             'do_you_have_dependent' => $request->are_you_dependent,
             'number_of_dependence' => $request->number_of_dependence,
-            'time' => $request->time,
-            'date' => $request->date,
-            'payment_status' => 'Success'
+            'any_city_of_choice' => $request->any_city_of_choice,
+            'city_of_your_choice' => $request->city_of_your_choice,
+            'any_course_of_reference' => $request->any_course_of_reference,
+            'course_of_reference' => $request->course_of_reference
         ]);   
 
         $data = array(
