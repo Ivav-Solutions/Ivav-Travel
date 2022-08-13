@@ -27,6 +27,8 @@ Route::post('/request_quote', [App\Http\Controllers\HomePageController::class, '
 
 
 Route::post('/uk_study_program', [App\Http\Controllers\HomePageController::class, 'uk_study_program']);
+Route::get('/uk_study_program/consultation/success/{id}', [App\Http\Controllers\HomePageController::class, 'consultation_success'])->name('consultation.success');
+Route::post('/uk_study_program/pay/consultation_fee/{id}', [App\Http\Controllers\HomePageController::class, 'pay_consultation_fee'])->name('make.payment');
 Route::post('/uk_global_talent_program', [App\Http\Controllers\HomePageController::class, 'post_uk_global_talent_program']);
 Route::get('/payment/callback', [App\Http\Controllers\HomePageController::class, 'handleGatewayCallback'])->name('user.handleGatewayCallback');
 Route::get('/consultation/successfully', [App\Http\Controllers\HomePageController::class, 'consultation_successfully'])->name('consultation.successful');
@@ -47,5 +49,5 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin/profile', [App\Http\Controllers\AdminController::class, 'profile'])->name('admin.profile');
     Route::post('/admin/profile/update', [App\Http\Controllers\AdminController::class, 'update_profile'])->name('admin.update.profile');
     Route::post('/admin/password/update', [App\Http\Controllers\AdminController::class, 'update_password'])->name('admin.update.password');
-    Route::get('/admin/download/cv/{id}', [App\Http\Controllers\AdminController::class, 'download_cv'])->name('admin.download.cv');
+    Route::get('/admin/download/{id}', [App\Http\Controllers\AdminController::class, 'download'])->name('admin.download');
 });

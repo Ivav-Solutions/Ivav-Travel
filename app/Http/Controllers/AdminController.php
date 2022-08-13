@@ -56,7 +56,8 @@ class AdminController extends Controller
 
     public function uk_global_talent_program()
     {
-        $globaltalents = Consultation::latest()->where('services', 'UK Global Talent Program')->get();
+        $globaltalents = Consultation::latest()->where('services', '!=', 'Post Graduate')
+                                                ->where('services', '!=', 'Under Graduate')->get();
 
         return view('admin.uk_global_talent_program', [
             'globaltalents' => $globaltalents
@@ -77,10 +78,20 @@ class AdminController extends Controller
         return view('admin.profile');
     }
 
-    public function download_cv($id) {
+    public function download($id) {
         $documentFinder = Crypt::decrypt($id);
+        
+        $consultation = Consultation::findorfail($documentFinder);
 
-        return Storage::download('/public/cv/'.$documentFinder);
+        $documents = explode(",", $consultation->documents);
+        // dd($documents);
+        foreach($documents as $document) 
+        {            
+            
+            
+        }
+        // dd($document);
+        return Storage::download('public/documents/'.$consultation->name.'/'.$document);
     }
 
     public function update_profile(Request $request) 

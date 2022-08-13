@@ -46,11 +46,11 @@ class HomePageController extends Controller
 
         foreach ($request->documents as $document) {
             $filename = $document->getClientOriginalName();
-            $document->storeAs('documents/' + $request->name, $filename, 'public');
+            $document->storeAs('documents/'. $request->name, $filename, 'public');
             $images[]=$filename;
         }
 
-        Consultation::create([
+        $consultation = Consultation::create([
             'name' => $request->name,
             'email' => $request->email,
             'phone_number' => $request->phone_number,
@@ -63,7 +63,9 @@ class HomePageController extends Controller
             'any_city_of_choice' => $request->any_city_of_choice,
             'city_of_your_choice' => $request->city_of_your_choice,
             'any_course_of_reference' => $request->any_course_of_reference,
-            'course_of_reference' => $request->course_of_reference
+            'course_of_reference' => $request->course_of_reference,
+            'date' => now()->toDateString(),
+            'time' => now()->toTimeString()
         ]);   
 
         $data = array(
@@ -71,20 +73,95 @@ class HomePageController extends Controller
             'email' => $request->email,
             'phone_number' => $request->phone_number,
             'marital_status' => $request->marital_status,
+            'sex' => $request->sex,
             'service' => $request->service,
             'do_you_have_dependent' => $request->are_you_dependent,
-            'number_of_dependence' => $request->number_of_dependence,
-            'time' => $request->time,
-            'date' => $request->date,
+            'number_of_dependence' => $request->number_of_dependence ?? 0,
+            'any_city_of_choice' => $request->any_city_of_choice,
+            'city_of_your_choice' => $request->city_of_your_choice ?? 0,
+            'any_course_of_reference' => $request->any_course_of_reference,
+            'course_of_reference' => $request->course_of_reference ?? 0,
         );
 
         /** Send message to the admin */
-        Mail::send('emails.consultation', $data, function ($m) use ($data) {
+        Mail::send('emails.consult', $data, function ($m) use ($data) {
             $m->to($data['email'])->subject('Consultation Details');
         });
 
+        // return back()->with('success_report', 'Thank you for consulting us today, A message has been sent to your mail!');
 
-        return back()->with('success_report', 'Thank you for consulting us today, A message has been sent to your mail!');
+        return redirect()->route('consultation.success', Crypt::encrypt($consultation->id)); 
+    }
+
+    public function consultation_success($id)
+    {
+
+        $consultationFinder = Crypt::decrypt($id);
+
+        $consultation = Consultation::findorfail($consultationFinder);
+
+        return view('success',[
+            'consultation' => $consultation
+        ]);
+    }
+
+    public function pay_consultation_fee($id, Request $request)
+    {
+        //Validate Request
+        $this->validate($request, [
+            'amount' => 'required|numeric|gte:100000'
+        ]);
+
+        $consultation_id = Crypt::decrypt($id);
+
+        $consultation = Consultation::findorfail($consultation_id);
+
+        $SECRET_KEY = config('app.paystack_secret_key');
+
+        $url = "https://api.paystack.co/transaction/initialize";
+
+        $fields = [
+            'email' => $consultation->email,
+            'amount' => $request->amount * 100,
+            'callback_url' => url('/payment/callback'),
+            'metadata' => [
+                'consultation_id' => $consultation->id,
+                'name' => $consultation->name
+            ]
+        ];
+
+        $fields_string = http_build_query($fields);
+        //open connection
+        $ch = curl_init();
+        
+        //set the url, number of POST vars, POST data
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            "Authorization: Bearer $SECRET_KEY",
+            "Cache-Control: no-cache",
+        ));
+        
+        //So that curl_exec returns the contents of the cURL; rather than echoing it
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+        
+        //execute post
+        $paystack_result = curl_exec($ch);
+        
+        $result = json_decode($paystack_result);
+
+        //  return $result;
+        $authorization_url = $result->data->authorization_url;
+        $paystack_status = $result->status;
+
+        // return dd($result->status);
+
+        if ($paystack_status == true) {
+            return redirect()->to($authorization_url);
+        } else {
+            return back()->with('failure_report', 'Payment failed. Response not ok, please try again!');
+        }
     }
 
     public function post_uk_global_talent_program(Request $request) 
@@ -99,6 +176,7 @@ class HomePageController extends Controller
             'email' => $request->email,
             'phone_number' => $request->phone_number,
             'marital_status' => $request->marital_status,
+            'sex' => $request->sex,
             'services' => $request->service,
             'do_you_have_dependent' => $request->are_you_dependent,
             'number_of_dependence' => $request->number_of_dependence,
@@ -191,6 +269,7 @@ class HomePageController extends Controller
         } else {
             // dd($result);
             $consultation = Consultation::findorfail($result->data->metadata->consultation_id);
+            $consultation->amount =  ($result->data->amount / 100);
             $consultation->payment_status = "Success";
             $consultation->save();
 

@@ -51,7 +51,7 @@
                             <div class="form-group">
                                 <label>Marital Status</label>
                                 <select class="form-select" name="marital_status" required>
-                                    <option>-- Select Marital Status --</option>
+                                    <option value="">-- Select Marital Status --</option>
                                     <option value="Single">Single</option>
                                     <option value="Married">Married</option>
                                     <option value="Divorced">Divorced</option>
@@ -64,7 +64,7 @@
                             <div class="form-group">
                                 <label>Sex</label>
                                 <select class="form-select" name="sex" required>
-                                    <option>-- Select Sex --</option>
+                                    <option value="">-- Select Sex --</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
                                 </select>
@@ -74,7 +74,7 @@
                             <div class="form-group">
                                 <label>Services</label>
                                 <select class="form-select" name="service" required>
-                                    <option>-- Select Service --</option>
+                                    <option value="">-- Select Service --</option>
                                     <option value="Under Graduate">Under Graduate</option>
                                     <option value="Post Graduate">Post Graduate</option>
                                 </select>
@@ -122,7 +122,7 @@
                         </div>
                         <div id="reference" style="display: none;" class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Enter the course of reference?</label>
+                                <label>Enter the course of reference</label>
                                 <input type="text" class="form-control" name="course_of_reference">
                                 <p>Minimum of three courses</p>
                             </div>
@@ -173,7 +173,7 @@
                             <div class="form-group">
                                 <label>Marital Status</label>
                                 <select class="form-select" name="marital_status" required>
-                                    <option>-- Select Marital Status --</option>
+                                    <option value="">-- Select Marital Status --</option>
                                     <option value="Single">Single</option>
                                     <option value="Married">Married</option>
                                     <option value="Divorced">Divorced</option>
@@ -182,10 +182,37 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Service</label>
-                                <input type="text" class="form-control" name="service" value="UK Global Talent Program" readonly>
+                                <label>Sex</label>
+                                <select class="form-select" name="sex" required>
+                                    <option value="">-- Select Sex --</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>Services</label>
+                                <select class="form-select" name="service" required>
+                                    <option>-- Select Service --</option>
+                                    <option value="UK Global Talent Program (Science)">Science</option>
+                                    <option value="UK Global Talent Program (Medicine)">Medicine</option>
+                                    <option value="UK Global Talent Program (Engineering)">Engineering</option>
+                                    <option value="UK Global Talent Program (Humanities)">Humanities</option>
+                                    <option value="UK Global Talent Program (Combined Arts)">Combined Arts</option>
+                                    <option value="UK Global Talent Program (Dance)">Dance</option>
+                                    <option value="UK Global Talent Program (Literature)">Literature</option>
+                                    <option value="UK Global Talent Program (Music)">Music</option>
+                                    <option value="UK Global Talent Program (Theatre)">Theatre</option>
+                                    <option value="UK Global Talent Program (Visual Arts)">Visual Arts</option>
+                                    <option value="UK Global Talent Program (Architecture)">Architecture</option>
+                                    <option value="UK Global Talent Program (Fashion Design)">Fashion Design</option>
+                                    <option value="UK Global Talent Program (Film and Television)">Film and Television</option>
+                                    <option value="UK Global Talent Program (Digital Technology)">Digital Technology</option>
+                                    <option value="UK Global Talent Program (Others)">Others</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">

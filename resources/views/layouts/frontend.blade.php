@@ -63,6 +63,7 @@
                 $(this).remove();
             });
         }, 11000);
+
     </script>
 
 </head>
@@ -112,6 +113,7 @@
     <script src="{{URL::asset('assets/js/main.js')}}"></script>
     <script type="text/javascript" src="{{URL::asset('assets/js/script.js')}}"></script>
     <script src="{{URL::asset('build/js/intlTelInput.js')}}"></script>
+    
     <script>
         var input = document.querySelector("#phone");
         var phone = document.querySelector("#phone_number");

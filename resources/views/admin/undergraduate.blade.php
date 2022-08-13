@@ -51,11 +51,15 @@
                                 <th>Phone Number</th>
                                 <th>Marital Status</th>
                                 <th>Service</th>
-                                <th>CV</th>
+                                <th>Documents</th>
                                 <th>Do You Have Dependent</th>
                                 <th>Number of Dependence</th>
-                                <th>Date</th>
-                                <th>Time</th>
+                                <th>Do you have any city of choice?</th>
+                                <th>City of your choice</th>
+                                <th>Do you have any course reference?</th>
+                                <th>Course of reference</th>
+                                <th>Amount</th>
+                                <th>Submitted At</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -69,13 +73,17 @@
                                 <td>{{$undergraduate->services}}</td>
                                 <td class="text-black">
                                     <div class="d-flex align-items-center">
-                                        <a class="btn btn-rounded btn-primary mr-auto text-nowrap" href="{{route('admin.download.cv', Crypt::encrypt($undergraduate->cv))}}">Download</a>
+                                        <a class="btn btn-rounded btn-primary mr-auto text-nowrap" href="{{route('admin.download', Crypt::encrypt($undergraduate->id))}}">Download</a>
                                     </div>
                                 </td>
                                 <td>{{$undergraduate->do_you_have_dependent}}</td>
                                 <td class="text-black">{{$undergraduate->number_of_dependence}}</td>
-                                <td class="text-black">{{$undergraduate->date}}</td>
-                                <td class="text-black">{{$undergraduate->time}}</td>
+                                <td class="text-black">{{$undergraduate->any_city_of_choice}}</td>
+                                <td class="text-black">{{$undergraduate->city_of_your_choice}}</td>
+                                <td class="text-black">{{$undergraduate->any_course_of_reference}}</td>
+                                <td class="text-black">{{$undergraduate->course_of_reference}}</td>
+                                <td class="text-black">₦{{ number_format($undergraduate->amount, 2)}}</td>
+                                <td class="text-black">{{$undergraduate->created_at}}</td>
                             </tr>
                         </tbody>
                         @endforeach

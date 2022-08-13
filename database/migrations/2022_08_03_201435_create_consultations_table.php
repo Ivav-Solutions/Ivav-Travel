@@ -21,16 +21,17 @@ class CreateConsultationsTable extends Migration
             $table->string('marital_status')->nullable();
             $table->string('sex')->nullable();
             $table->string('services')->nullable();
-            $table->string('documents')->nullable();
+            $table->string('documents', 1000)->nullable();
             $table->string('do_you_have_dependent')->nullable();
             $table->string('number_of_dependence')->nullable();
             $table->string('any_city_of_choice')->nullable();
             $table->string('city_of_your_choice')->nullable();
             $table->string('any_course_of_reference')->nullable();
             $table->string('course_of_reference')->nullable();
-            $table->date('date');
-            $table->time('time');
-            $table->string('payment_status')->default('Pending');;
+            $table->date('date')->nullable();
+            $table->time('time')->nullbale();
+            $table->string('amount')->nullable();
+            $table->string('payment_status')->default('Pending');
             $table->timestamps();
         });
     }

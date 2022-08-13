@@ -50,32 +50,42 @@
                                 <th>Email</th>
                                 <th>Phone Number</th>
                                 <th>Marital Status</th>
+                                <th>Sex</th>
                                 <th>Service</th>
-                                <th>CV</th>
+                                <th>Documents</th>
                                 <th>Do You Have Dependent</th>
                                 <th>Number of Dependence</th>
-                                <th>Date</th>
-                                <th>Time</th>
+                                <th>Do you have any city of choice?</th>
+                                <th>City of your choice</th>
+                                <th>Do you have any course reference?</th>
+                                <th>Course of reference</th>
+                                <th>Amount</th>
+                                <th>Submitted At</th>
                             </tr>
                         </thead>
                         <tbody>
                         @foreach($postgraduates as $postgraduate)
                             <tr>
-                                <td>{{$loop->iteration}}</td>
+                            <td>{{$loop->iteration}}</td>
                                 <td class="text-black">{{$postgraduate->name}}</td>
                                 <td>{{$postgraduate->email}}</td>
                                 <td class="text-black">{{$postgraduate->phone_number}}</td>
                                 <td class="text-black">{{$postgraduate->marital_status}}</td>
+                                <td class="text-black">{{$postgraduate->sex}}</td>
                                 <td>{{$postgraduate->services}}</td>
                                 <td class="text-black">
                                     <div class="d-flex align-items-center">
-                                        <a class="btn btn-rounded btn-primary mr-auto text-nowrap" href="{{route('admin.download.cv', Crypt::encrypt($postgraduate->cv))}}">Download</a>
+                                        <a class="btn btn-rounded btn-primary mr-auto text-nowrap" href="{{route('admin.download', Crypt::encrypt($postgraduate->id))}}">Download</a>
                                     </div>
                                 </td>
                                 <td>{{$postgraduate->do_you_have_dependent}}</td>
                                 <td class="text-black">{{$postgraduate->number_of_dependence}}</td>
-                                <td class="text-black">{{$postgraduate->date}}</td>
-                                <td class="text-black">{{$postgraduate->time}}</td>
+                                <td class="text-black">{{$postgraduate->any_city_of_choice}}</td>
+                                <td class="text-black">{{$postgraduate->city_of_your_choice}}</td>
+                                <td class="text-black">{{$postgraduate->any_course_of_reference}}</td>
+                                <td class="text-black">{{$postgraduate->course_of_reference}}</td>
+                                <td class="text-black">₦{{ number_format($postgraduate->amount, 2)}}</td>
+                                <td class="text-black">{{$postgraduate->created_at}}</td>
                             </tr>
                         </tbody>
                         @endforeach

@@ -144,16 +144,19 @@
                     <tr>
                         <td align="left" style="padding: 20px 30px 20px 10px; color: #000; border-top: none; border-bottom: none; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
 							<p>We have considered all submissions in drafting this consultation and it has been successfully booked.</p>
-							<p style="font-weight: 700;">When</p>
-							<p>{{$date}} * {{$time}}</p>
 							<p style="font-weight: 700;">Details</p>
 							<ul style="list-style: none;">
 								<li>Email : <b>{{$email}}</b></li>
 								<li>Phone Number : <b>{{$phone_number}}</b></li>
 								<li>Marital Status : <b>{{$marital_status}}</b></li>
+                                <li>Sex : <b>{{$sex}}</b></li>
 								<li>Service : <b>{{$service}}</b></li>
 								<li>Do You Have A Dependent? : <b>{{$do_you_have_dependent}}</b></li>
 								<li>How many dependents are you travelling with? : <b>{{$number_of_dependence}}</b></li>
+                                <li>Do you have any city of choice? : <b>{{$any_city_of_choice}}</b></li>
+                                <li>Enter the city of your choice : <b>{{$city_of_your_choice}}</b></li>
+                                <li>Do you have any course reference? : <b>{{$any_course_of_reference}}</b></li>
+                                <li>Enter the course of reference : <b>{{$course_of_reference}}</b></li>
 							</ul>
 							<p>Thank you for choosing {{config('app.name')}}.</p>
                         </td>
