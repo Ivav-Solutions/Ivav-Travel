@@ -131,9 +131,16 @@
                             <div class="form-group">
                                 <label>Your Documents</label>
                                 <input type="file" class="form-control" name="documents[]" required multiple>
-                                <p>Bachelor of Science/Higher National Diploma, Ordinary National Diploma(If Applicable), Marriage Certificate (If Applicable),
+                                <p style="color: #fff;"> Bachelor of Science/Higher National Diploma, Ordinary National Diploma(If Applicable), Marriage Certificate (If Applicable),
                                     Change of Name (If Applicable), International Passport, Academic Reference Letter, Work Reference Letter, Statement of Purpose,
                                     Academic Transcript </p>
+                                <div class="text-left mt-1" style="color: #fff;">
+                                    <p style="color: #fff;"><b>How to upload multiple documents at once</b></p>
+                                    <ul>
+                                        <li>Click the Choose Files button above</li>
+                                        <li>Hold down the ctrl key (Window) or command key (macOS) and at the same time select the pictures you want to upload.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
