@@ -56,8 +56,8 @@
                                 <th>Number of Dependence</th>
                                 <th>Do you have any city of choice?</th>
                                 <th>City of your choice</th>
-                                <th>Do you have any course reference?</th>
-                                <th>Course of reference</th>
+                                <th>Do you have any course Preference?</th>
+                                <th>Course of Preference</th>
                                 <th>Amount</th>
                                 <th>Submitted At</th>
                             </tr>

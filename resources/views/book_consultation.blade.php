@@ -108,12 +108,12 @@
                             <div class="form-group">
                                 <label>Enter the city of your choice</label>
                                 <input type="text" class="form-control" name="city_of_your_choice">
-                                <p>Minimum of three cities</p>
+                                <p>maximum of three cities</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Do you have any course reference?</label>
+                                <label>Do you have any course Preference?</label>
                                 <div style="margin-top: 1rem">
                                     <input type="radio" id="e1" name="any_course_of_reference" required onchange="course2()" value="Yes"><span style="color: #fff; margin-left: 5px; margin-right: 1rem;">Yes</span>
                                     <input type="radio" name="any_course_of_reference" required onchange="course(this.value)" value="No" checked><span style="color: #fff; margin-left: 5px">No</span>
@@ -122,9 +122,9 @@
                         </div>
                         <div id="reference" style="display: none;" class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Enter the course of reference</label>
+                                <label>Enter the course of Preference</label>
                                 <input type="text" class="form-control" name="course_of_reference">
-                                <p>Minimum of three courses</p>
+                                <p>maximum of three courses</p>
                             </div>
                         </div>
                         <div class="col-12">

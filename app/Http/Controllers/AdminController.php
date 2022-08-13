@@ -84,13 +84,12 @@ class AdminController extends Controller
         $consultation = Consultation::findorfail($documentFinder);
 
         $documents = explode(",", $consultation->documents);
-        // dd($documents);
         foreach($documents as $document) 
-        {            
-            
-            
+        {     
+            // dd($documents);       
+            return Storage::download('public/documents/'.$consultation->name.'/'.$documents);
         }
-        // dd($document);
+        
         return Storage::download('public/documents/'.$consultation->name.'/'.$document);
     }
 
