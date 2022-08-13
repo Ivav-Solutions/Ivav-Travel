@@ -138,7 +138,7 @@
                                     <p style="color: #fff;"><b>How to upload multiple documents at once</b></p>
                                     <ul>
                                         <li>Click the Choose Files button above</li>
-                                        <li>Hold down the ctrl key (Window) or command key (macOS) and at the same time select the pictures you want to upload.</li>
+                                        <li>Hold down the ctrl key (Window) or command key (macOS) and at the same time select the documents you want to upload.</li>
                                     </ul>
                                 </div>
                             </div>
