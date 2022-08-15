@@ -48,7 +48,7 @@
                 <h3><a href="/service/uk_study_program/post_graduate">Post Graduate Program</a></h3>
                 <p>Enrol for your Masters, PhD or Postdoctoral programme in the quickest way possible with our
                     guidance.</p>
-                <a href="/service/uk_study_program/post_graduate" class="link-btn">Read More</a>
+                <a href="/service/uk_study_program/post_graduate" class="link-btn">Learn More</a>
             </div>
 
             <div class="single-services-item">
@@ -58,7 +58,7 @@
                 <h3><a href="/service/uk_study_program/under_graduate">Under Graduate Program</a></h3>
                 <p>Start your higher academic journey with our professional recommendation. We will guide you to
                     choose the best university for your desired programme.</p>
-                <a href="/service/uk_study_program/under_graduatee" class="link-btn">Read More</a>
+                <a href="/service/uk_study_program/under_graduatee" class="link-btn">Learn More</a>
             </div>
 
             <div class="single-services-item">
@@ -66,9 +66,9 @@
                     <i class="ri-money-dollar-box-line"></i>
                 </div>
                 <h3><a href="/service/uk_global_talent_program">UK Global Talent Program</a></h3>
-                <p>Start your higher academic journey with our professional recommendation. We will guide you to
-                    choose the best university for your desired programme.</p>
-                <a href="/service/uk_global_talent_program" class="link-btn">Read More</a>
+                <p>Live and work as a professional in the United Kingdom. If you qualify for the Global Talent Visa, 
+                    you will earn better because your service is so much relevant to the UK economy.</p>
+                <a href="/service/uk_global_talent_program" class="link-btn">Learn More</a>
             </div>
         </div>
     </div>
