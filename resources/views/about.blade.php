@@ -113,8 +113,8 @@
 <div class="funfacts-area pt-100 pb-70">
     <div class="container">
         <div class="section-title">
-            <span class="sub-title">FUN FACTS</span>
-            <h2>Let's Meet Up With Our Fun Facts And Introduce To Us</h2>
+            <span class="sub-title">FACTS</span>
+            <h2>Our Facts</h2>
         </div>
 
         <div class="row justify-content-center">

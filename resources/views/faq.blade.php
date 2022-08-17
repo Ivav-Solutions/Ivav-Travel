@@ -31,7 +31,7 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
                         <p>Compared to many other countries, UK's commitment to quality education is top-notch.</p> 
-                        <p>They have inspiring teaching methods, state-of-the-art facilities, and outstanding research exoosure. 
+                        <p>They have inspiring teaching methods, state-of-the-art facilities, and outstanding research exposure. 
                         Also, their courses are high-quality and will adequately prepare you for your desired employment. </p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                 </button>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        <p>Of course you can get some good amount yanked off your tuition. Speak with one of our experts work out something specific for you (link). </p>
+                        <p>Of course you can get some good amount yanked off your tuition. Speak with one of our experts to work out something specific for you. <a href="/book_consultation" style="color: #fff; padding: 0px 30px !important; text-decoration: none; background-color: #0000ff;">Book Consultation</a> </p>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <!-- <div class="accordion-item">
                 <button class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
                     What is the health insurance like in the UK?
                 </button>
@@ -148,7 +148,7 @@
                         <p>If your visa is a tier 4 student visa and you will be studying in the UK for not less than six (6) months, then you may be eligible for the same NHS benefits as UK nationals.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="accordion-item">
                 <button class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">

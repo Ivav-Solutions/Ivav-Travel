@@ -19,7 +19,7 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/about-us">About Us</a></li>
                         <li><a href="/contact">Contact Us</a></li>
-                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="https://blog.ivavtravel.com/">Our Blog</a></li>
                     </ul>
                 </div>
             </div>

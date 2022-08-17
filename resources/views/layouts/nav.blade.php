@@ -33,7 +33,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link {{ (request()->is('')) ? 'active' : '' }}">Blog</a></li>
+                                <li class="nav-item"><a href="https://blog.ivavtravel.com/" class="nav-link {{ (request()->is('')) ? 'active' : '' }}">Blog</a></li>
                                 <li class="nav-item"><a href="/contact" class="nav-link {{ (request()->is('contact')) ? 'active' : '' }}">Contact</a></li>
                             </ul>
 
