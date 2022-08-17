@@ -59,10 +59,10 @@
 
                 <div class="col-lg-6 col-md-5 col-sm-6">
                     <ul class="social-links">
-                        <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="https://www.facebook.com/Ivav-Travel-111016201707202/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                        <!-- <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li> -->
+                        <li><a href="https://www.linkedin.com/company/ivav-solutions/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                        <li><a href="https://instagram.com/ivavtravel?igshid=YmMyMTA2M2Y=" target="_blank"><i class="ri-instagram-line"></i></a></li>
                     </ul>
                 </div>
             </div>
