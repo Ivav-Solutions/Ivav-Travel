@@ -139,6 +139,7 @@
                                     <ul>
                                         <li>Click the Choose Files button above</li>
                                         <li>Hold down the ctrl key (Window) or command key (macOS) and at the same time select the documents you want to upload.</li>
+                                        <li>For Mobile Users, To select multiple files press on as many files as you want to select and check marks will appear over all of the selected files.</li>
                                     </ul>
                                 </div>
                             </div>
