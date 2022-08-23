@@ -103,6 +103,12 @@
                             </div>
 
                             <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="form-group mb-3">
+                                    {!! app('captcha')->display() !!}
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12">
                                 <button type="submit" class="default-btn">Send Message <i class="ri-arrow-right-line"></i></button>
                                 <div class="clearfix"></div>
                             </div>

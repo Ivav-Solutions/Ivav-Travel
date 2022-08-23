@@ -25,6 +25,8 @@
 
     <link rel="icon" type="image/png" href="{{URL::asset('assets/img/favicon.png')}}">
 
+    {!! NoCaptcha::renderJs() !!}
+    
     <script type="text/javascript">
         function show(str) {
             document.getElementById('display_box').style.display = 'none';
