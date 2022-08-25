@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
+use ZipArchive;
 
 class AdminController extends Controller
 {
@@ -29,7 +30,7 @@ class AdminController extends Controller
         $totalTransactions = Transaction::latest()->get();
         $consultations = Consultation::latest()->take(5)->get();
 
-        return view('admin.dashboard',[
+        return view('admin.dashboard', [
             'totalConsultations' => $totalConsultations,
             'totalTransactions' => $totalTransactions,
             'consultations' => $consultations
@@ -57,7 +58,7 @@ class AdminController extends Controller
     public function uk_global_talent_program()
     {
         $globaltalents = Consultation::latest()->where('services', '!=', 'Post Graduate')
-                                                ->where('services', '!=', 'Under Graduate')->get();
+            ->where('services', '!=', 'Under Graduate')->get();
 
         return view('admin.uk_global_talent_program', [
             'globaltalents' => $globaltalents
@@ -78,34 +79,44 @@ class AdminController extends Controller
         return view('admin.profile');
     }
 
-    public function download($id) {
+    public function download($id)
+    {
         $documentFinder = Crypt::decrypt($id);
-        
+
         $consultation = Consultation::findorfail($documentFinder);
 
         $documents = explode(",", $consultation->documents);
-        foreach($documents as $document) 
-        {     
-            // dd($documents);       
-            return Storage::download('public/documents/'.$consultation->name.'/'.$documents);
+
+        $file_path = Storage::path('public/documents/' . $consultation->name);
+
+        $fileName = $consultation->name . '.zip';
+        $zip = new ZipArchive;
+
+        $zip->open(public_path($fileName),  ZipArchive::CREATE);
+
+        foreach ($documents as $document) {
+            $path = $file_path . '/' . $document;
+            if (file_exists($path)) {
+                $zip->addFromString(basename($path),  file_get_contents($path));
+            }
         }
-        
-        return Storage::download('public/documents/'.$consultation->name.'/'.$document);
+        $zip->close();
+
+        return response()->download(public_path($fileName));
     }
 
-    public function update_profile(Request $request) 
+    public function update_profile(Request $request)
     {
         $this->validate($request, [
             'name' => ['required', 'string', 'max:255'],
         ]);
 
         $user = User::findorfail(Auth::user()->id);
-        
-        if($user->email == $request->email)
-        {
+
+        if ($user->email == $request->email) {
             $user->update([
                 'name' => $request->name,
-            ]); 
+            ]);
         } else {
             $this->validate($request, [
                 'email' => ['required', 'string', 'email', 'max:255'],
@@ -114,24 +125,23 @@ class AdminController extends Controller
             $user->update([
                 'name' => $request->name,
                 'email' => $request->email,
-            ]); 
+            ]);
         }
-        
+
         return back()->with('success_report', 'Profile Updated Successfully');
     }
 
-    public function update_password (Request $request) 
+    public function update_password(Request $request)
     {
         $this->validate($request, [
             'new_password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
 
         $user = User::findorfail(Auth::user()->id);
-        
+
         $user->password = Hash::make($request->new_password);
         $user->save();
 
         return back()->with('success_report', 'Password Updated Successfully');
     }
-
 }
