@@ -27,7 +27,16 @@
 
     {!! NoCaptcha::renderJs() !!}
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNGFZ8Q7H0"></script>
+
     <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TNGFZ8Q7H0');
+
         function show(str) {
             document.getElementById('display_box').style.display = 'none';
         }
@@ -65,9 +74,7 @@
                 $(this).remove();
             });
         }, 11000);
-
     </script>
-
 </head>
 
 <body>
