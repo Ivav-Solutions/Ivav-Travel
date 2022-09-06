@@ -11,7 +11,17 @@
 		<link href="{{URL::asset('dash/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}" rel="stylesheet">
 		<link href="{{URL::asset('dash/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css')}}" rel="stylesheet">
 		<link href="{{URL::asset('dash/css/style.css')}}" rel="stylesheet">
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNGFZ8Q7H0"></script>
+
         <script type="text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-TNGFZ8Q7H0');
+
             window.setTimeout(function() {
                 $(".alert-timeout").fadeTo(500, 0).slideUp(1000, function() {
                     $(this).remove();
