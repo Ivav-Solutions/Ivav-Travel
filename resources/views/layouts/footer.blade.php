@@ -28,8 +28,8 @@
                 <div class="single-footer-widget pl-2">
                     <h3>Services</h3>
                     <ul class="links-list">
-                        <li><a href="/service/uk_study_program/under_graduate">Under Graduate</a></li>
-                        <li><a href="/service/uk_study_program/post_graduate">Post Graduate</a></li>
+                        <li><a href="/service/uk_study_program/under_graduate">UnderGraduate</a></li>
+                        <li><a href="/service/uk_study_program/post_graduate">PostGraduate</a></li>
                         <li><a href="/service/uk_global_talent_program">UK Global Talent Program</a></li>
                     </ul>
                 </div>
