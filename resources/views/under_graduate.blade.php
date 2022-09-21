@@ -5,7 +5,7 @@
 @endsection
 
 @section('breadcrumb')
-@includeIf('layouts.breadcrumb', ['title' => 'Services', 'subtitle' => 'Under Graduate'])
+@includeIf('layouts.breadcrumb', ['title' => 'Services', 'subtitle' => 'UnderGraduate'])
 @endsection
 
 @section('page-content')
@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-12">
                 <div class="services-details-desc">
-                    <h3>UK Under Graduate Program</h3>
+                    <h3>UK UnderGraduate Program</h3>
                     <p>Admissions into UK universities are managed by the  Universities and Colleges Admissions Service (UCAS). It's is a UK-based organisation whose main designation is to facilitate the application process for British universities. </p>
                     <img src="{{URL::asset('assets/img/services/services3.jpg')}}" alt="image">
                     <p>Most of the universities and other higher education colleges in the UK employ the service of UCAS to accept applications.</p> 

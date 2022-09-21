@@ -5,7 +5,7 @@
 @endsection
 
 @section('breadcrumb')
-@includeIf('layouts.breadcrumb', ['title' => 'Service', 'subtitle' => 'Post Graduate'])
+@includeIf('layouts.breadcrumb', ['title' => 'Service', 'subtitle' => 'PostGraduate'])
 @endsection
 
 @section('page-content')
@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-12">
                 <div class="services-details-desc">
-                    <h3>UK Post Graduate Program</h3>
+                    <h3>UK PostGraduate Program</h3>
                     <p>After your undergraduate degree, you can apply to a suitable university in the UK for your postgraduate degree programme. 
                         You can apply for a Masters degree or a PhD programme. </p>
                     <p>In the United Kingdom, a Masters programme doesn't exceed two years. That is, it can be completed in just a year or a maximum of two years and this usually depends on the course you're studying. </p>

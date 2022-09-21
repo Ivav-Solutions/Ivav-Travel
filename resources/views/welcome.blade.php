@@ -45,7 +45,7 @@
                 <div class="icon">
                     <i class="ri-briefcase-line"></i>
                 </div>
-                <h3><a href="/service/uk_study_program/post_graduate">Post Graduate Program</a></h3>
+                <h3><a href="/service/uk_study_program/post_graduate">PostGraduate Program</a></h3>
                 <p>Enrol for your Masters, PhD or Postdoctoral programme in the quickest way possible with our
                     guidance.</p>
                 <a href="/service/uk_study_program/post_graduate" class="link-btn">Learn More</a>
@@ -55,7 +55,7 @@
                 <div class="icon">
                     <i class="ri-money-dollar-box-line"></i>
                 </div>
-                <h3><a href="/service/uk_study_program/under_graduate">Under Graduate Program</a></h3>
+                <h3><a href="/service/uk_study_program/under_graduate">UnderGraduate Program</a></h3>
                 <p>Start your higher academic journey with our professional recommendation. We will guide you to
                     choose the best university for your desired programme.</p>
                 <a href="/service/uk_study_program/under_graduatee" class="link-btn">Learn More</a>
