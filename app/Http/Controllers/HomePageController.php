@@ -83,6 +83,16 @@ class HomePageController extends Controller
             'course_of_reference' => $request->course_of_reference ?? 0,
         );
 
+        $admin = array(
+            'name' => 'Admin',
+            'email' => 'info@ivavtravel.com'
+        );
+
+        /** Send message to the admin */
+        Mail::send('emails.notification', $admin, function ($m) use ($admin) {
+            $m->to($admin['email'])->subject('Notification');
+        });
+
         /** Send message to the admin */
         Mail::send('emails.consult', $data, function ($m) use ($data) {
             $m->to($data['email'])->subject('Consultation Details');
@@ -310,6 +320,16 @@ class HomePageController extends Controller
 
     public function consultation_successfully()
     {
+        $admin = array(
+            'name' => 'Admin',
+            'email' => 'info@ivavtravel.com'
+        );
+
+        /** Send message to the admin */
+        Mail::send('emails.notification', $admin, function ($m) use ($admin) {
+            $m->to($admin['email'])->subject('Notification');
+        });
+        
         return view('sucessful_message');
     }
     
