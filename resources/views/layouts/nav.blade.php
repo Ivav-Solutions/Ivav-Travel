@@ -40,10 +40,16 @@
                             <div class="others-option">
                                 <div class="dropdown language-switcher">
                                     <button class="btn btn-secondary d-flex align-items-center dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="{{URL::asset('assets/img/flag/us.jpg')}}" alt="image">
+                                        <img src="{{URL::asset('assets/img/flag/uk.jpg')}}" alt="image">
                                         <span>Eng <i class="ri-arrow-down-s-line"></i></span>
                                     </button>
                                     <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                                <img src="{{URL::asset('assets/img/flag/us.jpg')}}" alt="flag">
+                                                <span>Usa</span>
+                                            </a>
+                                        </li>
                                         <li>
                                             <a href="#" class="dropdown-item d-flex align-items-center">
                                                 <img src="{{URL::asset('assets/img/flag/germany.jpg')}}" alt="flag">
