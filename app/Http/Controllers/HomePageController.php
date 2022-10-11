@@ -119,7 +119,7 @@ class HomePageController extends Controller
     {
         //Validate Request
         $this->validate($request, [
-            'amount' => 'required|numeric|gte:100000'
+            'amount' => 'required|numeric|gte:25000'
         ]);
 
         $consultation_id = Crypt::decrypt($id);
