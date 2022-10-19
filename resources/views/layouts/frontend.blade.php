@@ -30,7 +30,7 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNGFZ8Q7H0"></script>
 
-    <script type="text/javascript">
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -120,7 +120,7 @@
     <script src="{{URL::asset('assets/js/contact-form-script.js')}}"></script>
     <script src="{{URL::asset('assets/js/ajaxchimp.min.js')}}"></script>
     <script src="{{URL::asset('assets/js/main.js')}}"></script>
-    <script type="text/javascript" src="{{URL::asset('assets/js/script.js')}}"></script>
+    <script src="{{URL::asset('assets/js/script.js')}}"></script>
     <script src="{{URL::asset('build/js/intlTelInput.js')}}"></script>
     
     <script>
