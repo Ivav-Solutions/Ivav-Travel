@@ -204,7 +204,7 @@
                             <div class="form-group">
                                 <label>Services</label>
                                 <select class="form-select" name="service" required>
-                                    <option>-- Select Service --</option>
+                                    <option value="">-- Select Service --</option>
                                     <option value="UK Global Talent Program (Science)">Science</option>
                                     <option value="UK Global Talent Program (Medicine)">Medicine</option>
                                     <option value="UK Global Talent Program (Engineering)">Engineering</option>
