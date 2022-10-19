@@ -17,7 +17,7 @@
 
                         <div class="collapse navbar-collapse mean-menu">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a href="/" class="nav-link {{ (request()->is('/')) ? 'active' : '' }}">Home</a</li>
+                                <li class="nav-item"><a href="/" class="nav-link {{ (request()->is('/')) ? 'active' : '' }}">Home</a></li>
                                 <li class="nav-item"><a href="/about-us" class="nav-link {{ (request()->is('about-us')) ? 'active' : '' }}">About Us</a></li>
                                 <li class="nav-item"><a href="/faq" class="nav-link {{ (request()->is('faq')) ? 'active' : '' }}">Faq</a></li>
                                 <li class="nav-item"><a href="#" class="dropdown-toggle nav-link {{ (request()->is('service*')) ? 'active' : '' }}">Services</a>
