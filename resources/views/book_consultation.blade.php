@@ -25,6 +25,7 @@
             <div class="sign_in_sec current" id="tab-1">
                 <form action="/uk_study_program" method="post" enctype="multipart/form-data">
                     @csrf
+                    @honeypot
                     <div class="row">
                         <div class="mb-3">
                             @includeIf('layouts.error_template')
@@ -155,6 +156,7 @@
             <div class="sign_in_sec" id="tab-2">
                 <form action="/uk_global_talent_program" method="post" enctype="multipart/form-data">
                     @csrf
+                    @honeypot
                     <div class="row">
                         <div class="mb-3">
                             @includeIf('layouts.error_template')

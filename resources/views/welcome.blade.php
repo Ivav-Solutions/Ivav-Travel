@@ -85,6 +85,7 @@
             </div>
             <form action="/request_quote" method="post">
                 @csrf
+                @honeypot
                 @includeIf('layouts.error_template')
                 <div class="row">
                     <div class="col-lg-6 col-md-6">

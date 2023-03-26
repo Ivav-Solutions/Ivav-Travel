@@ -22,15 +22,15 @@ Route::get('/service/uk_study_program/post_graduate', [App\Http\Controllers\Home
 Route::get('/service/uk_global_talent_program', [App\Http\Controllers\HomePageController::class, 'uk_global_talent_program']);
 Route::get('/faq', [App\Http\Controllers\HomePageController::class, 'faq']);
 Route::get('/contact', [App\Http\Controllers\HomePageController::class, 'contact']);
-Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm'])->middleware(ProtectAgainstSpam::class);;
-Route::get('/book_consultation', [App\Http\Controllers\HomePageController::class, 'book_consultation']);
-Route::post('/request_quote', [App\Http\Controllers\HomePageController::class, 'request_quote']);
+Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm'])->middleware(ProtectAgainstSpam::class);
+Route::get('/book_consultation', [App\Http\Controllers\HomePageController::class, 'book_consultation'])->middleware(ProtectAgainstSpam::class);
+Route::post('/request_quote', [App\Http\Controllers\HomePageController::class, 'request_quote'])->middleware(ProtectAgainstSpam::class);
 
 
-Route::post('/uk_study_program', [App\Http\Controllers\HomePageController::class, 'uk_study_program']);
+Route::post('/uk_study_program', [App\Http\Controllers\HomePageController::class, 'uk_study_program'])->middleware(ProtectAgainstSpam::class);
 Route::get('/uk_study_program/consultation/success/{id}', [App\Http\Controllers\HomePageController::class, 'consultation_success'])->name('consultation.success');
 Route::post('/uk_study_program/pay/consultation_fee/{id}', [App\Http\Controllers\HomePageController::class, 'pay_consultation_fee'])->name('make.payment');
-Route::post('/uk_global_talent_program', [App\Http\Controllers\HomePageController::class, 'post_uk_global_talent_program']);
+Route::post('/uk_global_talent_program', [App\Http\Controllers\HomePageController::class, 'post_uk_global_talent_program'])->middleware(ProtectAgainstSpam::class);
 Route::get('/payment/callback', [App\Http\Controllers\HomePageController::class, 'handleGatewayCallback'])->name('user.handleGatewayCallback');
 Route::get('/consultation/successfully', [App\Http\Controllers\HomePageController::class, 'consultation_successfully'])->name('consultation.successful');
 
