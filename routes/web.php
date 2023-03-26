@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Route::get('/service/uk_study_program/post_graduate', [App\Http\Controllers\Home
 Route::get('/service/uk_global_talent_program', [App\Http\Controllers\HomePageController::class, 'uk_global_talent_program']);
 Route::get('/faq', [App\Http\Controllers\HomePageController::class, 'faq']);
 Route::get('/contact', [App\Http\Controllers\HomePageController::class, 'contact']);
-Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm']);
+Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm'])->middleware(ProtectAgainstSpam::class);;
 Route::get('/book_consultation', [App\Http\Controllers\HomePageController::class, 'book_consultation']);
 Route::post('/request_quote', [App\Http\Controllers\HomePageController::class, 'request_quote']);
 
