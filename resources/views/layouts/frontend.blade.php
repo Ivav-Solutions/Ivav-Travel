@@ -98,14 +98,14 @@
     <section>
         <div class="go-to-top">
             <a href="#">
-                <i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+                <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+            </a>
         </div>
     </section>
 
     <div class="go-top"><i class="ri-arrow-up-s-line"></i></div>
 
     <!-- Links of JS files -->
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="{{URL::asset('assets/js/jquery.min.js')}}"></script>
     <script src="{{URL::asset('assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{URL::asset('assets/js/owl.carousel.min.js')}}"></script>
